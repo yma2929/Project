@@ -404,8 +404,14 @@ blockquote{
     p{
         font-size: 1.35rem;
     }
-     
-   
+
+    .br{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .br img{
+        max-width: 100px;
+    }
     
     }
 
@@ -449,7 +455,13 @@ li {
 p{
     font-size: 1.45rem;
 }
-
+.br{
+    flex-direction: column;
+    justify-content: center;
+}
+.br img{
+    max-width: 80px;
+}
 }    
 
 
