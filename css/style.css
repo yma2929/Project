@@ -1,0 +1,518 @@
+*{
+    border-radius: 20px;
+}
+p{
+    font-family: "Vidaloka", serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #504E76;
+}
+.section1 p{
+    font-size: 20px;
+}
+.contact strong{
+    text-align: center;
+    font-family: "Vidaloka", serif;
+    color: #262272;
+    padding: 25px;
+    font-size: 20px;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    font-size: 40px;
+    color: #081f5c;
+}
+h2{
+    color:#364C84;
+    font-family:"Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+}
+body{
+    background-color:#fcfaf8 ;
+}
+.container{
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "picture section1  section1 section1"
+        "objectives objectives cuisine  cuisine "
+        " about contact contact contact "
+        "image image image image"
+        "info info quote quote "
+        "footer footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: .15fr .5fr .56fr .4fr .2fr .34fr .25fr;
+        grid-gap:15px;
+        margin: 10px;
+}
+.picture img{
+    grid-area:picture;
+    height:auto;
+    width:650px;
+    padding: 40px; 
+    margin: 10px; 
+    border-radius: 15px;
+
+}
+header{
+    grid-area: header;
+    display:block;
+    background-color: #edf1f6;
+    margin:20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+
+}
+/* nav css starts here */
+#navArea li a{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    font-size: 16px;
+    color: #0f0f3d;
+    text-decoration: none;
+}
+
+.navBar{
+    list-style: none;
+    display:flex;
+    gap:20px
+}
+.navBar li{
+    display: inline;
+    padding: 0 20px;
+}
+.navBar li a{
+    transition: all 0.3s ease 0s;
+}
+.navBar li a:hover{
+    color: rgb(100, 71, 215);
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+img.logo{
+    border-radius: 15px;
+}
+/* nav css ends here */
+
+/*section1 css starts here*/
+.section1{
+    grid-area: section1;
+    margin: 20px;
+    text-align: center;
+    display:block;
+    padding: 45px 10%; 
+}
+
+
+/*section1 css ends here*/
+
+/*button css*/
+.btn{
+    padding: 15px 40px;
+    margin: 10px auto;
+    border:none;
+    outline: none;
+    color:rgb(81, 81, 127);
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 45px;
+    background-color: #E7F1A8;
+    text-decoration: none;
+    font-family: "Elsie Swash Caps", cursive;
+    font-size: 20px;
+    font-weight: 200;
+    text-align:center;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+.btn:hover{
+    background-color: rgb(81, 81, 127);
+    color: white;
+    text-emphasis:bold;
+    box-shadow: 5px 5px 15px rgba(170, 106, 106, 0.2);
+}
+/*button css ends here*/
+/*objectives css starts here*/
+.objectives{
+    grid-area: objectives;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 15px;
+    text-decoration: none; 
+     
+ 
+    background-color: #eff4fb;
+    
+}
+.objectives p , ul {
+    font-size: 20px;
+    font-family: "Vidaloka", serif;
+    font-weight: 400;
+    color: #504E76;
+}
+.objectives ul{
+    padding: 25px;
+    list-style: none;
+    display: flex;
+    display: list-item;
+    gap: 20px;
+}
+/*objectives css ends here*/
+/*cusine-types css starts here*/
+.cuisine-types{
+    grid-area: cuisine;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 15px;
+    text-decoration: none; 
+    
+}
+
+.cuisine-types ul{
+    padding: 25px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    display: list-item;
+    
+
+}
+.cuisine-types ul li{
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 10px;
+    background-color: #EBBAC2;
+    font-family: "Dancing Script" , cursive;
+    font-size: 20px;
+    font-weight: 200;
+    border-radius: 25px;
+    
+}
+.cuisine-types ul  li a{
+    text-decoration: none;
+    color: #504E76;
+}
+.cuisine-types ul li a{
+    transition: all 0.3s ease 0s;
+}
+.cusine-types ul li a:hover{
+    color: white;
+    font-weight: bolder;
+}
+
+/*cusine-types css ends here*/
+/*about css starts here*/
+.about{
+    grid-area: about;
+    margin: 30px;
+    padding: 25px;
+    border-radius: 15px;
+    text-decoration: none;
+    /*display: inline-block;
+    width:500px;*/
+    text-align: center;
+    
+}
+.about p{
+    font-size: 20px; 
+}
+.about ul{
+    padding: 25px;
+    list-style: none;
+}
+/*about css ends here*/
+/*contact css starts here */
+.contact{
+    grid-area: contact;
+    margin: 30px;
+    padding: 25px;
+    border-radius: 15px;
+    text-decoration: none;
+    /*display: inline-block;*/
+    text-align: center;
+}
+.contact p{
+    text-align: left;
+    font-size: 20px; 
+}
+
+
+/*contact css ends here */
+
+/*quote css starts here */
+
+.quote{
+    grid-area: quote;
+    background-color: lavenderblush;
+    
+}
+.quote-container{
+    display: flex;
+    margin: 25px;
+    gap:5px; }
+
+blockquote{
+    display: inline-block;
+    width: 105%;
+    height:auto;
+    border-radius: 15px;
+    padding: 10px;
+    color: white; 
+}
+/*quote css ends here */
+/*info css starts here */
+.info{
+    grid-area: info;
+        margin: 30px;
+        padding: 25px;
+        border-radius: 15px;
+        text-decoration: none; 
+    }
+    
+    .info ul{
+        padding: 25px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        gap: 20px;
+        justify-content:space-between;
+        text-decoration: none;
+    }
+    
+    .info ul li{
+        display: inline-block;
+        background-color: #bfbfdb;
+        padding: 25px 20px;
+        margin: 20px;
+        font-size: 20px;
+        font-weight: 200;
+        border-radius: 25px;
+    
+    }
+    .info ul li a{
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+    }
+    .info ul li a:hover{
+        color: rgb(54, 71, 128);
+        font-weight: bolder;
+    }
+    /*info css ends here */
+
+    /*footer css starts here */
+.footer{
+    grid-area: footer;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #edf1f6;
+    border-radius: 20px; 
+}
+/*footer css ends here */
+/*image css*/
+.bc  {
+    grid-area: image;
+    border-radius: 15px;
+    margin: 15px;
+    box-shadow: none;
+    width:auto;
+    height:auto;
+    display: inline-block;
+    background-color:#f5e9d3;
+}
+
+.bc img{
+    border-radius: 15px;
+    width: 45%;
+    height: auto;
+    align-content:center ;
+    display: block;
+    margin: 0 auto;
+    
+}
+ 
+/*image css ends here*/
+/*responsivness code*/
+
+
+
+
+/*size 992px*/
+
+@media screen and (max-width:992px){
+
+
+    .container{
+        display:grid;
+        grid-template-areas: "header header header "
+                            "picture  section1  section1"
+                            "objectives objectives cuisine"
+                            "about contact contact"
+                            "image image image"
+                            "info quote quote"
+                            "footer footer footer";
+        gap:25px;
+        padding:10px;
+    }
+    
+    
+    
+    header, .navBar , .section1 ,.objectives , .cuisine-types ,.about ,.contact , .quote ,.info , .footer ,.bc {
+        
+        padding:19px;
+    }
+    
+
+    h1{
+        font-size:1.90rem;
+    }
+    h2{
+        font-size: 1.65rem;
+    }
+    li {
+        font-size: 1.35rem;
+    }
+    p{
+        font-size: 1.35rem;
+    }
+    
+        
+    #sctitle{
+        font-size: 1.55rem;
+    }
+    
+    
+    .title{
+        font-size:1.05rem;
+    
+    }
+    
+    }
+
+
+    
+/*size 768px*/
+
+
+@media screen and (max-width:768px){
+
+.container{
+    display:grid;
+    grid-template-areas: "nav"
+                        "header"
+                        "pi"
+                        "pe"
+                        "ce"
+                        "pr"
+                        "ct"
+                        "ft";
+    gap:80px;
+    padding:15px;
+    margin: 20px;
+}
+
+.coursedetalis{
+    display: grid;
+    grid-template-areas: "fs"
+                        "fd"
+                        "sf"
+                        "sd";
+    align-items: start;
+    gap:20px;
+    
+}
+.navbar{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    display: block;
+}
+#contact{
+    padding: 10px;
+    
+}
+.header{
+    padding-bottom: 50px;
+}
+.header, #personal-info{
+    padding-top: 100px;
+}
+
+#personal-education , #certification, #projects{
+    
+    padding: 15px;
+}
+
+
+
+h1{
+    font-size:1.95rem;
+
+}
+h2{
+    font-size: 1.25rem;
+}
+li {
+    font-size: 1.15rem;
+}
+p{
+    font-size: 1.45rem;
+}
+
+    
+#sctitle{
+    font-size: 1.25rem;
+}
+
+.title{
+    font-size:1.35rem;
+}
+
+}
+
+
+
+/*size 576px*/
+
+
+@media screen and (max-width:576px) {
+    .container{
+        display:grid;
+        grid-template-areas: "nav"
+                            "header"
+                            "pi"
+                            "pe"
+                            "ce"
+                            "pr"
+                            "ct"
+                            "ft";
+        gap:35px;
+        padding:10px;
+        margin: 25px;
+    }
+    h1{
+        font-size:1.75rem;
+    }
+    h2{
+        font-size: 1.25rem;
+    }
+    p, li {
+        font-size: 1.15rem;
+    }
+    .header{
+        padding: 35px;
+    }
+    
+    
+}
