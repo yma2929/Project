@@ -377,16 +377,13 @@ blockquote{
                             "image image image"
                             "info quote quote"
                             "footer footer footer";
-        gap:25px;
+        gap:20px;
         padding:30px;
-        margin: 20px;
+        margin: 5px;
     }
     
 
-    header, .navBar , .section1 ,.objectives , .cuisine-types ,.about ,.contact , .quote ,.info , .footer  {
-        
-        padding:19px;
-    }
+    
     
 
     h1{
@@ -405,12 +402,15 @@ blockquote{
         font-size: 1.35rem;
     }
 
-    .br{
-        flex-direction: row;
-        justify-content: center;
+    .br{  
+        padding: 50px;
+
     }
     .br img{
-        max-width: 100px;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto ;
     }
     
     }
