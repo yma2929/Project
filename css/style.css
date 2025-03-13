@@ -379,10 +379,11 @@ blockquote{
                             "footer footer footer";
         gap:25px;
         padding:30px;
+        margin: 20px;
     }
     
 
-    header, .navBar , .section1 ,.objectives , .cuisine-types ,.about ,.contact , .quote ,.info , .footer ,.bc {
+    header, .navBar , .section1 ,.objectives , .cuisine-types ,.about ,.contact , .quote ,.info , .footer  {
         
         padding:19px;
     }
@@ -421,10 +422,12 @@ blockquote{
     grid-template-areas: "header header   "
                             "picture  picture"
                               "section1  section1"
-                            "objectives   cuisine"
+                            "objectives  objectives"
+                            "cuisine cuisine"
                             "about   contact"
                             "image   image"
-                            "info   quote"
+                            "info  info"
+                            "quote quote"
                             "footer   footer";
     gap:50px;
     padding:15px;
