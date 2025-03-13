@@ -39,7 +39,7 @@ body{
         "header header header header"
         "picture section1  section1 section1"
         "objectives objectives cuisine  cuisine "
-        " about contact contact contact "
+        " about about contact contact "
         "image image image image"
         "info info quote quote "
         "footer footer footer footer";
@@ -48,13 +48,23 @@ body{
         grid-gap:15px;
         margin: 10px;
 }
-.picture img{
+.picture{
+    
     grid-area:picture;
-    height:auto;
-    width:650px;
-    padding: 40px; 
-    margin: 10px; 
     border-radius: 15px;
+    margin: 15px;
+    box-shadow: none;
+    width:auto;
+    height:auto;
+    display: inline-block;
+
+}
+.picture img{ 
+    padding: 40px;  
+ 
+    width: 130%;
+    height: auto; 
+    margin: 0 auto;
 
 }
 header{
@@ -236,7 +246,7 @@ img.logo{
     padding: 25px;
     border-radius: 15px;
     text-decoration: none;
-    /*display: inline-block;*/
+    display: inline-block; 
     text-align: center;
 }
 .contact p{
@@ -246,7 +256,7 @@ img.logo{
 
 
 /*contact css ends here */
-
+ 
 /*quote css starts here */
 
 .quote{
@@ -373,14 +383,7 @@ blockquote{
         
         padding:19px;
     }
-    .picture img{
-        height:auto;
-        max-width:100%;
-        padding: 30px; 
-        margin: 10px auto; 
-        border-radius: 15px;
     
-    }
 
     h1{
         font-size:1.90rem;
@@ -424,14 +427,7 @@ blockquote{
     margin: 20px;
 }
 
-.picture img{
-    height:auto;
-    max-width:100%;
-    padding: 20px; 
-    margin: 10px auto; 
-    border-radius: 10px;
 
-}
 
 h1{
     font-size:1.95rem;
@@ -476,14 +472,7 @@ p{
         padding:10px;
         margin: 25px;
     }
-    .picture img{
-        height:auto;
-        max-width:100%;
-        padding: 15px; 
-        margin: 10px auto; 
-        border-radius: 15px;
-    
-    }
+   
     h1{
         font-size:1.75rem;
     }
