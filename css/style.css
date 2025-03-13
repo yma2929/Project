@@ -374,7 +374,15 @@ blockquote{
     }
     
     
+    .picture img{ 
+        padding: 40px;  
+     
+        width: 100%;
+        height: auto; 
+        margin: 0 10px;
     
+    }
+
     header, .navBar , .section1 ,.objectives , .cuisine-types ,.about ,.contact , .quote ,.info , .footer ,.bc {
         
         padding:19px;
@@ -423,7 +431,14 @@ blockquote{
     margin: 20px;
 }
 
+.picture img{ 
+    padding: 40px;  
+ 
+    width: 100%;
+    height: auto; 
+    margin: 0 10px;
 
+}
 
 h1{
     font-size:1.95rem;
@@ -467,6 +482,14 @@ p{
         gap:35px;
         padding:10px;
         margin: 25px;
+    }
+    .picture img{ 
+        padding: 40px;  
+     
+        width: 90%;
+        height: auto; 
+        margin: 0 10px;
+    
     }
    
     h1{
