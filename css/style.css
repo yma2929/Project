@@ -1,4 +1,6 @@
-
+*{
+    border-radius: 15px;
+}
 p{
     font-family: "Vidaloka", serif;
     font-weight: 500;
@@ -370,7 +372,7 @@ blockquote{
                             "info quote quote"
                             "footer footer footer";
         gap:25px;
-        padding:10px;
+        padding:30px;
     }
     
     
@@ -480,20 +482,20 @@ p{
                             "quote "
                             "footer ";
         gap:35px;
-        padding:10px;
+        padding:25px;
         margin: 25px;
     }
     .picture img{ 
         padding: 40px;  
-     
+
         width: 90%;
         height: auto; 
         margin: 0 10px;
     
     }
-   
+
     h1{
-        font-size:1.75rem;
+        font-size:1.95rem;
     }
     h2{
         font-size: 1.25rem;
