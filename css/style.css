@@ -61,7 +61,7 @@ body{
     padding: 40px;  
     max-width: 100%;
     height: auto; 
-    margin: 0 auto;
+    margin: 20 auto;
     border-radius: 15px;
     box-shadow: none;
 
@@ -348,7 +348,7 @@ blockquote{
 
 .bc img{
     border-radius: 15px;
-    width: 35%;
+    max-width: 35%;
     height: auto;
     align-content:center ;
     display: block;
@@ -404,8 +404,7 @@ blockquote{
     p{
         font-size: 1.35rem;
     }
-    
-        
+     
    
     
     }
