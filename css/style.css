@@ -373,7 +373,14 @@ blockquote{
         
         padding:19px;
     }
+    .picture img{
+        height:auto;
+        max-width:100%;
+        padding: 30px; 
+        margin: 10px auto; 
+        border-radius: 15px;
     
+    }
 
     h1{
         font-size:1.90rem;
@@ -412,12 +419,19 @@ blockquote{
                             "image   image"
                             "info   quote"
                             "footer   footer";
-    gap:80px;
+    gap:50px;
     padding:15px;
     margin: 20px;
 }
 
+.picture img{
+    height:auto;
+    max-width:100%;
+    padding: 20px; 
+    margin: 10px auto; 
+    border-radius: 10px;
 
+}
 
 h1{
     font-size:1.95rem;
@@ -461,6 +475,14 @@ p{
         gap:35px;
         padding:10px;
         margin: 25px;
+    }
+    .picture img{
+        height:auto;
+        max-width:100%;
+        padding: 15px; 
+        margin: 10px auto; 
+        border-radius: 15px;
+    
     }
     h1{
         font-size:1.75rem;
