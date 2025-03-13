@@ -405,48 +405,16 @@ blockquote{
 
 .container{
     display:grid;
-    grid-template-areas: "nav"
-                        "header"
-                        "pi"
-                        "pe"
-                        "ce"
-                        "pr"
-                        "ct"
-                        "ft";
+    grid-template-areas: "header header   "
+                            "picture     section1"
+                            "objectives   cuisine"
+                            "about   contact"
+                            "image   image"
+                            "info   quote"
+                            "footer   footer";
     gap:80px;
     padding:15px;
     margin: 20px;
-}
-
-.coursedetalis{
-    display: grid;
-    grid-template-areas: "fs"
-                        "fd"
-                        "sf"
-                        "sd";
-    align-items: start;
-    gap:20px;
-    
-}
-.navbar{
-    margin-top: 10px;
-    margin-bottom: 25px;
-    display: block;
-}
-#contact{
-    padding: 10px;
-    
-}
-.header{
-    padding-bottom: 50px;
-}
-.header, #personal-info{
-    padding-top: 100px;
-}
-
-#personal-education , #certification, #projects{
-    
-    padding: 15px;
 }
 
 
@@ -458,6 +426,9 @@ h1{
 h2{
     font-size: 1.25rem;
 }
+h3{
+    font-size: 1.15rem;
+}
 li {
     font-size: 1.15rem;
 }
@@ -465,16 +436,8 @@ p{
     font-size: 1.45rem;
 }
 
-    
-#sctitle{
-    font-size: 1.25rem;
-}
+}    
 
-.title{
-    font-size:1.35rem;
-}
-
-}
 
 
 
@@ -484,14 +447,17 @@ p{
 @media screen and (max-width:576px) {
     .container{
         display:grid;
-        grid-template-areas: "nav"
-                            "header"
-                            "pi"
-                            "pe"
-                            "ce"
-                            "pr"
-                            "ct"
-                            "ft";
+        grid-template-areas: "header  "
+                            "picture  "
+                            "section1   "
+                            "objectives "
+                            " cuisine"
+                            "about"
+                             "contact"
+                            "image"
+                            "info"
+                            "quote "
+                            "footer ";
         gap:35px;
         padding:10px;
         margin: 25px;
@@ -501,6 +467,9 @@ p{
     }
     h2{
         font-size: 1.25rem;
+    }
+    h3{
+        font-size: 1.15rem;
     }
     p, li {
         font-size: 1.15rem;
