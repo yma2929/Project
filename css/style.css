@@ -381,23 +381,18 @@ blockquote{
     h2{
         font-size: 1.65rem;
     }
+    h3{
+        font-size: 1.45rem;
+    }
     li {
-        font-size: 1.35rem;
+        font-size: 1.25rem;
     }
     p{
         font-size: 1.35rem;
     }
     
         
-    #sctitle{
-        font-size: 1.55rem;
-    }
-    
-    
-    .title{
-        font-size:1.05rem;
-    
-    }
+   
     
     }
 
