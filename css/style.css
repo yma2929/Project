@@ -1,6 +1,4 @@
-*{
-    border-radius: 20px;
-}
+
 p{
     font-family: "Vidaloka", serif;
     font-weight: 500;
@@ -54,8 +52,6 @@ body{
     border-radius: 15px;
     margin: 15px;
     box-shadow: none;
-    width:auto;
-    height:auto;
     display: inline-block;
 
 }
@@ -64,7 +60,7 @@ body{
  
     width: 130%;
     height: auto; 
-    margin: 0 auto;
+    margin: 0 10px;
 
 }
 header{
@@ -213,7 +209,7 @@ img.logo{
 .cuisine-types ul li a{
     transition: all 0.3s ease 0s;
 }
-.cusine-types ul li a:hover{
+.cuisine-types ul li a:hover{
     color: white;
     font-weight: bolder;
 }
