@@ -367,7 +367,8 @@ blockquote{
     .container{
         display:grid;
         grid-template-areas: "header header header "
-                            "picture  section1  section1"
+                            "picture picture picture"
+                            " section1  section1 section1"
                             "objectives objectives cuisine"
                             "about contact contact"
                             "image image image"
@@ -424,7 +425,8 @@ blockquote{
 .container{
     display:grid;
     grid-template-areas: "header header   "
-                            "picture     section1"
+                            "picture  picture"
+                              "section1  section1"
                             "objectives   cuisine"
                             "about   contact"
                             "image   image"
