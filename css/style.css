@@ -1,6 +1,4 @@
-*{
-    border-radius: 15px;
-}
+ 
 p{
     font-family: "Vidaloka", serif;
     font-weight: 500;
@@ -74,6 +72,8 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 25px 10%;
+    
+    border-radius: 25px;
 
 }
 /* nav css starts here */
@@ -116,7 +116,7 @@ img.logo{
     margin: 20px;
     text-align: center;
     display:block;
-    padding: 45px 10%; 
+    padding: 55px 10%; 
 }
 
 
@@ -260,6 +260,8 @@ img.logo{
 .quote{
     grid-area: quote;
     background-color: lavenderblush;
+    
+    border-radius: 15px;
     
 }
 .quote-container{
