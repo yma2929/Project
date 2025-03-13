@@ -49,18 +49,21 @@ body{
 .picture{
     
     grid-area:picture;
-    border-radius: 15px;
-    margin: 15px;
-    box-shadow: none;
-    display: inline-block;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
 }
 .picture img{ 
     padding: 40px;  
- 
-    width: 130%;
+    max-width: 100%;
     height: auto; 
-    margin: 0 10px;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: none;
 
 }
 header{
@@ -345,7 +348,7 @@ blockquote{
 
 .bc img{
     border-radius: 15px;
-    width: 45%;
+    width: 35%;
     height: auto;
     align-content:center ;
     display: block;
@@ -378,15 +381,6 @@ blockquote{
         padding:30px;
     }
     
-    
-    .picture img{ 
-        padding: 40px;  
-     
-        width: 100%;
-        height: auto; 
-        margin: 0 10px;
-    
-    }
 
     header, .navBar , .section1 ,.objectives , .cuisine-types ,.about ,.contact , .quote ,.info , .footer ,.bc {
         
@@ -437,15 +431,6 @@ blockquote{
     margin: 20px;
 }
 
-.picture img{ 
-    padding: 40px;  
- 
-    width: 100%;
-    height: auto; 
-    margin: 0 10px;
-
-}
-
 h1{
     font-size:1.95rem;
 
@@ -480,7 +465,7 @@ p{
                             "objectives "
                             " cuisine"
                             "about"
-                             "contact"
+                            "contact"
                             "image"
                             "info"
                             "quote "
@@ -488,14 +473,6 @@ p{
         gap:35px;
         padding:25px;
         margin: 25px;
-    }
-    .picture img{ 
-        padding: 40px;  
-
-        width: 90%;
-        height: auto; 
-        margin: 0 10px;
-    
     }
 
     h1{
