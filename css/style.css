@@ -54,14 +54,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
 
 }
 .picture img{ 
     padding: 40px;  
-    max-width: 100%;
+    max-width: 120%;
     height: auto; 
-    margin: 20 auto;
+    margin-left: 80px;
     border-radius: 15px;
     box-shadow: none;
 
