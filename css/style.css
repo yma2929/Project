@@ -16,7 +16,7 @@ p{
     font-size: 20px;
 }
 h1{
-    font-family: "Playfair Display",serif;
+    font-family:"Playfair Display", serif;
     text-decoration: double;
     font-weight: 900;
     font-size: 65px;
@@ -103,7 +103,7 @@ header{
     transition: all 0.3s ease 0s;
 }
 .navBar li a:hover{
-    color: rgb(210, 152, 45) !important;
+    color: rgb(128, 13, 13) !important;
     font-weight: 900;
     font-size: larger;
 }
@@ -147,6 +147,9 @@ img.logo{
     text-align:center;
     text-decoration: none;
     transition: all 0.3s ease 0s;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2) !important;
+
+    
 }
 .btn:hover{
     background-color: rgb(81, 81, 127);
@@ -163,7 +166,7 @@ img.logo{
     border-radius: 15px;
     text-decoration: none;
     background-color: #eff4fb;
-    box-shadow: 10px 10px 20px 5px rgba(107, 173, 234, 0.2);
+    box-shadow: 10px 10px 20px 5px rgba(107, 173, 234, 0.2) !important;
 
     
 }
@@ -255,7 +258,7 @@ img.logo{
     text-decoration: none;
     display: inline-block; 
     text-align: center;
-    box-shadow: 10px 10px 20px 5px rgba(239, 237, 150, 0.2);
+    box-shadow: 10px 10px 20px 5px rgba(239, 237, 150, 0.2) !important;
 }
 .contact p{
     text-align: left;
@@ -291,7 +294,7 @@ blockquote{
     color: white; 
     background-color: lavenderblush;
 
-    box-shadow: 0px 0px 15px rgba(255, 182, 193, 0.6);
+    box-shadow: 0px 0px 15px rgba(255, 182, 193, 0.6) !important;
 
 }
 blockquote p{ 
