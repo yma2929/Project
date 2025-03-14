@@ -16,9 +16,9 @@ p{
     font-size: 20px;
 }
 h1{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Playfair Display",serif;
     font-weight: 900;
-    font-size: 40px;
+    font-size: 65px;
     color: #081f5c;
 }
 h2{
@@ -162,6 +162,8 @@ img.logo{
     border-radius: 15px;
     text-decoration: none;
     background-color: #eff4fb;
+    box-shadow: 10px 10px 20px 5px rgba(107, 173, 234, 0.2);
+
     
 }
 .objectives p , ul {
@@ -169,6 +171,7 @@ img.logo{
     font-family: "Vidaloka", serif;
     font-weight: 400;
     color: #504E76;
+
 }
 .objectives ul{
     padding: 25px;
@@ -231,6 +234,7 @@ img.logo{
     /*display: inline-block;
     width:500px;*/
     text-align: center;
+
     
 }
 .about p{
@@ -250,6 +254,7 @@ img.logo{
     text-decoration: none;
     display: inline-block; 
     text-align: center;
+    box-shadow: 10px 10px 20px 5px rgba(239, 237, 150, 0.2);
 }
 .contact p{
     text-align: left;
@@ -284,6 +289,9 @@ blockquote{
     padding: 50px;
     color: white; 
     background-color: lavenderblush;
+
+    box-shadow: 0px 0px 15px rgba(255, 182, 193, 0.6);
+
 }
 blockquote p{ 
     font-weight: 600;
