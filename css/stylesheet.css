@@ -1,53 +1,37 @@
-*{
-    box-sizing: border-box;
-    border-radius: 20px;
-    
+
+p{
+    font-family: "Vidaloka", serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #504E76;
+}
+
+h1{
+    font-family:"Playfair Display", serif;
+    text-decoration: double;
+    font-weight: 900;
+    font-size: 65px;
+    color: #081f5c;
+}
+h2{
+    color:#364C84;
+    font-family:"Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+}
+label{
+    font-size: 15px;
+    font-weight: bold;
+
 }
 body{
     background-color:#fcfaf8 ;
 }
-.container {
-    display: grid;
 
-    grid-template-areas:
-        "nav nav "
-        "welcome welcome"
-        "obj  cus"
-        "about contact"
-        "info info"
-        "footer footer";
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    
-
-}
-
-.sec1{
-    grid-area: welcome;
-    text-align: center;
-    padding: 30px;
-    margin: 20px;
-    background-color: #d0e3ff;
-
-}
-h1{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 200;
-    font-size: 40px;
-    color: #081f5c;
-}
-
-#navArea li a{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 200;
-    font-size: 16px;
-    color: #0000ff;
-    text-decoration: none;
-
-}
 
 header{
-    grid-area: nav;
+    grid-area: header;
     display:block;
     background-color: #edf1f6;
     margin:20px;
@@ -55,11 +39,19 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 25px 10%;
+    
+    border-radius: 25px;
+
 }
-.logo{
-    cursor: pointer;
-    margin-right: auto;
+/* nav css starts here */
+#navArea li a{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    font-size: 16px;
+    color: #0f0f3d;
+    text-decoration: none;
 }
+
 .navBar{
     list-style: none;
     display:flex;
@@ -68,159 +60,61 @@ header{
 .navBar li{
     display: inline;
     padding: 0 20px;
+    color:#081f5c
 }
 .navBar li a{
     transition: all 0.3s ease 0s;
 }
 .navBar li a:hover{
-    color: red;
+    color: rgb(128, 13, 13) !important;
+    font-weight: 900;
+    font-size: larger;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
 }
 img.logo{
     border-radius: 15px;
 }
 
-.btn{
-    padding: 15px 40px;
+/* nav css ends here */
+form{
+    background-color: #f5eef7;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(111, 110, 111, 0.2) !important;
+    padding: 20px;
+    margin: 10px;
+    max-width: 450px;
+
+}
+form .button{
+    padding: 10px 30px;
     margin: 10px auto;
     border:none;
     outline: none;
     color:rgb(81, 81, 127);
     cursor: pointer;
     display: inline-block;
-    border-radius: 15px;
-    background-color: #E7F1A8;
+    border-radius: 45px;
+    background-color: #e9f3ff;
     text-decoration: none;
+    font-family: "Elsie Swash Caps", cursive;
+    font-size: 15px;
+    font-weight: 200;
+    text-align:center;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2) !important;
+
+    
 }
-.btn:hover{
+form .button:hover{
     background-color: rgb(81, 81, 127);
     color: white;
     text-emphasis:bold;
-    box-shadow: 5px 5px 15px rgba(170, 106, 106, 0.2);
-}
-.quote-container{
-    display: flex;
-    margin: 15px;
-    gap:5px;
-}
-blockquote{
-    display: inline-block;
-    width: 45%;
-    height: 200px;
-    border-radius: 15px;
-    padding: 10px;
-    color: white;
-    margin: 15px;
-}
-footer{
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-    border-radius: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: #edf1f6;
-    border-radius: 20px;
-    grid-area: footer;
-}
-.cusine-types{
-    margin: 30px;
-    padding: 25px;
-    border-radius: 15px;
-    text-decoration: none;
-    grid-area: cus;
-    
-}
-.cusine-types ul{
-    padding: 25px;
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    justify-content:space-around;
-}
-.cusine-types ul li{
-    display: inline;
-    padding: 0 20px;
-}
-.cusine-types ul li a{
-    transition: all 0.3s ease 0s;
-}
-.cusine-types ul li a:hover{
-    color: white;
-    font-weight: bolder;
-}
-.objectives{
-    margin: 30px;
-    padding: 25px;
-    border-radius: 15px;
-    text-decoration: none;
-    grid-area: obj;
-}
-.objectives ul{
-    padding: 25px;
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    justify-content:space-around;
-}
-
-.contact{
-    margin: 30px;
-    padding: 25px;
-    border-radius: 15px;
-    text-decoration: none;
-    grid-area: contact;
-}
-.about{
-    margin: 30px;
-    padding: 25px;
-    border-radius: 15px;
-    text-decoration: none;
-    grid-area: about;
-}
-.about ul{
-    padding: 25px;
-    list-style: none;
-}
-.info{
-    margin: 30px;
-    padding: 25px;
-    border-radius: 15px;
-    text-decoration: none;
-    grid-area: info;
-}
-.info ul{
-    padding: 25px;
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    justify-content:stretch;
-    text-decoration: none;
-}
-
-.info ul li{
-    display: inline;
-    padding: 0 20px;
-}
-.info ul li a{
-    transition: all 0.3s ease 0s;
-}
-.info ul li a:hover{
-    color: white;
-    font-weight: bolder;
-}
-.bc {
-    border-radius: 15px;
-    margin: 15px;
-    box-shadow: none;
-    width:auto;
-    height: auto;
-
-}
-h2{
-    color:#364C84;
-    font-family: "Vidaloka", serif;
-    font-size: 30px;
-    font-weight: 200;
+    box-shadow: 5px 5px 15px rgba(246, 0, 74, 0.2) !important;
 
 
 }
