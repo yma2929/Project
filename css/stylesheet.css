@@ -29,6 +29,11 @@ body{
     background-color:#fcfaf8 ;
 }
 
+.container{
+    display: grid;
+    grid-area: "header header header"
+                "form form form";;
+}
 
 header{
     grid-area: header;
@@ -87,6 +92,7 @@ form{
     padding: 20px;
     margin: 10px;
     max-width: 450px;
+    grid-area: form;
 
 }
 form .button{
