@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content ="a website that shows several recipes from a varitey of cuisines">
         <meta name="keywords" content="recipes, food, cooking, cuisine, meals">
-        <link rel="icon" type="image/png"  sizes = "32x32" href="./media/icon.jpeg">
+        <link rel="icon" type="image/png"  sizes = "32x32" href="./media/webLogo.png">
 
         <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
 
@@ -24,8 +24,10 @@
             </a>
             <nav id="navArea">
                 <ul class="navBar">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li><a href="./contactUs.html">Contact Us</a></li>
                     <li><a href="./mainpage.html">Recipes</a></li>
                 </ul>
             </nav>
@@ -33,51 +35,183 @@
         
         </header>
 
-        <main>
-            <section class="userOpinion">
-                <form method="post" action="#" autocomplete="on">
+        <section class="search search-container">
+            <input type="text" id="searchInput" class="searchBox" placeholder="Search for recipes using their name..">
+            <button class="searchButton">🔍</button>
+            
 
-                <p>
-                    <label>First Name:
-                        <input type="text" size="35" name="fname" id="firstName" placeholder="John" required autofocus>
-                    </label>
-                </p>
-                <p>
-                    <label> Last Name:
-                        <input type="text" size="35" name="lname" id="lastName" placeholder="James">
-                    </label>
-                </p>
-                <p>
-                    <label>Email Address:
-                        <input type="email" name="email" size="35" id="emailAddress" pattern="[a-zA-Z0-9-_!]+@[a-zA-z]{2,8}\.[a-zA-Z]{2,6}" placeholder="e.g  jphnjames234@gmail.com" required>
-                    </label>
-                </p>
-                <p>
-                    <label> Phone Number:
-                        <input type="tel" name="phoneNum" size="35" minlength="9" maxlength="9" pattern="[0-9]{9}" placeholder="e.g 055452349">
-                    </label>
-                </p>
-                <p>
-                    <label for="textarea">Please provide any comments:</label>
-                </p>
-                <p>
-                    <textarea cols="30" rows="15" id="textarea">Write here ..........</textarea>
+        </section>
 
-                </p>
-                <p>
-                    <label> Kindly rate our service
-                    <input type="range" id="rating" name="rate" min="0" max="5">
-                </label>
-                </p>
-                <p>
+        <section class="cuisine-types item">
+            <h2>🎐 Cuisines </h2>
+            <p> Here is a list of the cuisines that we provide recipes for:</p>
+           
+            <div class="cardcontainer">
+
+                <div class="recipeCard">
+                    <div class="cardImage"> <img src="./media/foodPics/italian.jpg" > </div>
+                        <div class="cardBody">
+                            <div class="cardTitle">Italian</div>
+                            <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dignissimos</p>
+                            <a href="#" class="cardButton">Click to view recipes</a>
+                        </div>
+                 </div>
+                 
+                 <div class="recipeCard">
+                    <div class="cardImage"> <img src="./media/foodPics/american.jpg" > </div>
+                        <div class="cardBody">
+                            <div class="cardTitle">American</div>
+                            <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dignissimos</p>
+                            <a href="#" class="cardButton">Click to view recipes</a>
+                        </div>
+                 </div>
+
+                 <div class="recipeCard">
+                    <div class="cardImage"> <img src="./media/foodPics/middleeast.jpg" > </div>
+                        <div class="cardBody">
+                            <div class="cardTitle">Middle Eastern</div>
+                            <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dignissimos</p>
+                            <a href="#" class="cardButton">Click to view recipes</a>
+                        </div>
+                 </div>
+                </div> 
+                
+    </section>
+
+
         
-                    <input type="reset" value="Reset" class="button">
-                    <input type="submit" value="Submit" class="button">
-                </p>
+        <section class="userOpinion">
+            <h2>💌 We would like to hear more from you!</h2>
+           
 
-                </form>
+           <form method="post" action="#" autocomplete="on">
+            <h3> Rating Form 🌟</h3>
+            <p>
+                <label>First Name:
+                    <input type="text" size="35" name="fname" id="firstName" placeholder="John" required autofocus>
+                </label>
+            </p>
+            <p>
+                <label> Last Name:
+                    <input type="text" size="35" name="lname" id="lastName" placeholder="James">
+                </label>
+            </p>
+            <p>
+                <label>Email Address:
+                    <input type="email" name="email" size="35" id="emailAddress" pattern="[a-zA-Z0-9-_!]+@[a-zA-z]{2,8}\.[a-zA-Z]{2,6}" placeholder="e.g  jphnjames234@gmail.com" required>
+                </label>
+            </p>
+            <p>
+                <label> Phone Number:
+                    <input type="tel" name="phoneNum" size="35" minlength="9" maxlength="9" pattern="[0-9]{9}" placeholder="e.g 055452349">
+                </label>
+            </p>
+            <p>
+                <label>Which web page did you like best?</label>
+                <p>
+                    <label>
+                    <input type="checkbox" value="mainpage" id="index" name="websitePages">
+                    Main page </label>
+                    <label>
+                        <input type="checkbox" value="contact" id="index" name="websitePages">
+                    Contact Us </label>
+                    <label>
+                        <input type="checkbox" value="about" id="index" name="websitePages">
+                    About Us  </label>
+                    <label>
+                        <input type="checkbox" value="recipe" id="index" name="websitePages">
+                    Recipes</label>
+                </p>
+            </p>
+            <p>
+                <label> Which Recipe did you follow?</label>
+                <p>
+                    <label>
+                        <input type="checkbox" value="r1" id="index" name="recipeType">
+                        r1 </label>
+                        <label>
+                            <input type="checkbox" value="r2" id="index" name="recipeType">
+                        r2 </label>
+                        <label>
+                            <input type="checkbox" value="r3" id="index" name="recipeType">
+                        r3  </label>
+                        <label>
+                            <input type="checkbox" value="r4" id="index" name="recipeType">
+                        r4</label>
+                </p>
+            </p>
+            <p>
+                <label> Rate the recipe:</label>
+                <p>
+                    <label>
+                        <input type="radio" name="recipeRate" value="1"> ⭐
+                    </label>
+                    <label>
+                        <input type="radio" name="recipeRate" value="2"> ⭐⭐
+                    </label>
+                    <label>
+                        <input type="radio" name="recipeRate" value="3"> ⭐⭐⭐
+                    </label>
+                    <label>
+                        <input type="radio" name="recipeRate" value="4"> ⭐⭐⭐⭐
+                    </label>
+                    <label>
+                        <input type="radio" name="recipeRate" value="5"> ⭐⭐⭐⭐⭐
+                    </label>
+                    
+                    
+                    
+                </p>
+            </p>
+            <p>
+                <label for="textarea">Please provide any comments:</label>
+            </p>
+            <p>
+                <textarea cols="30" rows="15" id="textarea">📩Write here..</textarea>
+
+            </p>
+            <p>
+                <label> Kindly rate our service
+                <input type="range" id="rating" name="rate" min="0" max="5">
+            </label>
+            </p>
+            <p>
+    
+                <input type="reset" value="Reset" class="button">
+                <input type="submit" value="Submit" class="button">
+            </p>
+
+            </form>
+        </section>
+
+           
+        
+
+       
+
+        <section class="quote item quote-container">
+            <h2> 🪄Facts </h2>
+                <blockquote >
+                    
+            
+                    <p id="random-facts"> 
+                        Honey never spoils! 🍯
+                        Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old—and still perfectly edible!</p>
+                </blockquote>
+                        
+            
             </section>
-        </main>
+        
+
+
+        
+        
+            <footer class="item footer">
+                <p> &copy; 2025 The Recipes Hub</p>
+            <p>All rights reserved</p>
+            <p> Feel free to contact us at <em>therecipeshub@gmail.com</em> or call us at <strong>056-666-666</strong> </p>
+        
+            </footer>
 
         </div>
 </body>

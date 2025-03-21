@@ -2,12 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>The Recipes Hub</title> 
+        <title>The Recipes Hub</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content ="a website that shows several recipes from a varitey of cuisines">
         <meta name="keywords" content="recipes, food, cooking, cuisine, meals">
-        <link rel="icon" type="image/png"  sizes = "32x32" href="./media/icon.jpeg">
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="icon" type="image/png"  sizes = "32x32" href="./media/webLogo.png">
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,13 +17,15 @@
     <body>
         <div class="container">
         <header class="item header">
-            <a href="./index.html">
+            <a href="./index.html"> 
                 <img class="logo" src="./media/icon.jpeg" alt="logo pic" width="100" height="100">
             </a>
             <nav id="navArea">
                 <ul class="navBar">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li><a href="./contactUs.html">Contact Us</a></li>
                     <li><a href="./mainpage.html">Recipes</a></li>
                 </ul>
             </nav>
@@ -79,22 +81,41 @@
         </section>
         
         <section class="cuisine-types item">
-                <h2>🎐 Cuisine Types </h2>
-                <p> Here is a list of the cuisines that we provide recipes for:</p>
+            <h2>🎐 Cuisine Types </h2>
+            <p> Here is a list of the cuisines that we provide recipes for:</p>
+           
+            <div class="cardcontainer">
+
+                <div class="recipeCard">
+                    <div class="cardImage"> <img src="./media/foodPics/italian.jpg" > </div>
+                        <div class="cardBody">
+                            <div class="cardTitle">Italian</div>
+                            <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dignissimos</p>
+                            <a href="#" class="cardButton">Click to view recipes</a>
+                        </div>
+                 </div>
+                 
+                 <div class="recipeCard">
+                    <div class="cardImage"> <img src="./media/foodPics/american.jpg" > </div>
+                        <div class="cardBody">
+                            <div class="cardTitle">American</div>
+                            <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dignissimos</p>
+                            <a href="#" class="cardButton">Click to view recipes</a>
+                        </div>
+                 </div>
+
+                 <div class="recipeCard">
+                    <div class="cardImage"> <img src="./media/foodPics/middleeast.jpg" > </div>
+                        <div class="cardBody">
+                            <div class="cardTitle">Middle Eastern</div>
+                            <p class="cardText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia dignissimos</p>
+                            <a href="#" class="cardButton">Click to view recipes</a>
+                        </div>
+                 </div>
+                </div> 
                 
-                <ul>
-                    <li> <a href="#">Italian</a> </li>
-                    <li> <a href="#">Mexican</a> </li>
-                    <li> <a href="#">Indian</a> </li>
-                    <li> <a href="#">Chinese</a> </li>
-                    <li> <a href="#">Japanese</a> </li>
-                    <li> <a href="#">American</a> </li>
-                    <li> <a href="#">French</a> </li>
-                    <li> <a href="#">Spanish</a> </li>
-                    <li> <a href="#">Middle Eastern</a> </li>
-                    <li> <a href="#">African</a> </li>
-                </ul>
-        </section>
+    </section>
+
 
         <section class="about item">
                 <h2>📖 About Us</h2>
@@ -117,7 +138,7 @@
             <p> We are always happy to hear from you and we will do our best to respond to your queries as soon as possible.</p>
             <p> You can also contact us by filling out this contact form, we look forward to hearing back from you!</p>
             <br> 
-            <a class="btn" href="#"> Contact Us </a>
+            <a class="btn" href="./contactUs.html"> Contact Us </a>
         </section>
 
         <section class="info item">
@@ -131,10 +152,10 @@
             <h3>🍽️ Our Functionalities:</h3>
             
                 <ul>
-                    <li><a href="#">🏡Introduction & Navigation</a></li>
-                    <li><a href="#">📞Contact Information</a></li>
-                    <li><a href="#">📖More about the Developers</a></li>
-                    <li><a href="#">🍲List of Recipes </a></li>
+                    <li><a href="./index.html">🏡Introduction & Navigation</a></li>
+                    <li><a href="./contactUs.html">📞Contact Information</a></li>
+                    <li><a href="./aboutUs.html">📖More about the Developers</a></li>
+                    <li><a href="./mainpage.html">🍲List of Recipes </a></li>
                 </ul>
             
         </section>
@@ -163,6 +184,8 @@
         <p> Feel free to contact us at <em>therecipeshub@gmail.com</em> or call us at <strong>056-666-666</strong> </p>
     
         </footer>
+
+        
     </div>
     </body>
 </html>

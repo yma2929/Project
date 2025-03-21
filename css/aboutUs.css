@@ -1,0 +1,133 @@
+header{
+    grid-area: header;
+    display:block;
+    background-color: #edf1f6;
+    margin:20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    
+    border-radius: 25px;
+
+}
+
+#navArea li a{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    font-size: 16px;
+    color: #0f0f3d;
+    text-decoration: none;
+}
+
+.navBar{
+    list-style: none;
+    display:flex;
+    gap:20px
+}
+.navBar li{
+    display: inline;
+    padding: 0 20px;
+    color:#081f5c
+}
+.navBar li a{
+    transition: all 0.3s ease 0s;
+}
+.navBar li a:hover{
+    color: rgb(128, 13, 13) !important;
+    font-weight: 900;
+    font-size: larger;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+img.logo{
+    border-radius: 15px;
+}
+
+
+p{
+    font-family: "Vidaloka", serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #504E76;
+}  
+
+body {
+    background-color: #a7c1cd;
+    color: #504E76;
+    text-align: center; 
+    text-decoration: solid;
+    font-family: "Vidaloka", serif; ;
+}
+
+
+h1{
+    font-family:"Playfair Display", serif;
+    text-decoration: double;
+    font-weight: 900;
+    font-size: 65px;
+    color: #081f5c;
+}
+
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 20px auto ; 
+    background-color: white;
+box-shadow:  5px 5px 15px rgba(0,0, 0.2);
+border-radius: 10px;
+}
+
+
+th, td {
+    border: 2px solid rgb(112, 109, 109); 
+    padding: 10px;
+    text-align: center;
+}
+
+
+th {
+    background-color: #d8dfe7;
+}
+
+
+table img {
+    width: 100px;   
+    height: auto; 
+    border-radius: 10px; 
+    display: block;
+    margin: auto;
+}
+
+
+a {
+    text-decoration: none;
+    color: #8da3b3;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0055aa;
+    text-decoration: underline;
+}
+
+footer{
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #edf1f6;
+    border-radius: 20px;
+}
+footer p{
+    font-family: "Vidaloka", serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #504E76;
+}

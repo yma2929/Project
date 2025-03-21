@@ -1,0 +1,595 @@
+ 
+p{
+    font-family: "Vidaloka", serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #504E76;
+}
+.section1 p{
+    font-size: 25px;
+}
+.contact strong{
+    text-align: center;
+    font-family: "Vidaloka", serif;
+    color: #262272;
+    padding: 25px;
+    font-size: 18px;
+}
+h1{
+    font-family:"Playfair Display", serif;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 65px;
+    color: #081f5c;
+}
+h2{
+    color:#364C84;
+    font-family:"Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+}
+body{
+    background-color:#fcfaf8 ;
+}
+.container{
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "picture picture  section1 section1  "
+        "objectives objectives cuisine  cuisine "
+        "contact contact about about  "
+        "image image image image"
+        "info info quote quote "
+        "footer footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: .15fr .5fr .56fr .4fr .2fr .34fr .25fr;
+        grid-gap:15px;
+        margin: 10px;
+}
+.picture{
+    
+    grid-area:picture;
+ 
+    margin-left: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    
+
+}
+.picture img{ 
+    padding: 40px;  
+    max-width: 120%;
+    height: auto; 
+    border-radius: 15px;
+        
+    box-shadow: none;
+
+}
+header{
+    grid-area: header;
+    display:block;
+    background-color: #edf1f6;
+    margin:20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    
+    border-radius: 25px;
+
+}
+/* nav css starts here */
+#navArea li a{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    font-size: 16px;
+    color: #0f0f3d;
+    text-decoration: none;
+}
+
+.navBar{
+    list-style: none;
+    display:flex;
+    gap:20px
+}
+.navBar li{
+    display: inline;
+    padding: 0 20px;
+    color:#081f5c
+}
+.navBar li a{
+    transition: all 0.3s ease 0s;
+}
+.navBar li a:hover{
+    color: rgb(128, 13, 13) !important;
+    font-weight: 900;
+    font-size: larger;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+img.logo{
+    border-radius: 15px;
+}
+/* nav css ends here */
+
+/*section1 css starts here*/
+.section1{
+    grid-area: section1;
+    margin: 20px;
+    text-align: center;
+    display:block;
+    padding: 55px 10%; 
+}
+
+
+/*section1 css ends here*/
+
+/*button css*/
+.btn{
+    padding: 15px 40px;
+    margin: 10px auto;
+    border:none;
+    outline: none;
+    color:rgb(81, 81, 127);
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 45px;
+    background-color: #E7F1A8;
+    text-decoration: none;
+    font-family: "Elsie Swash Caps", cursive;
+    font-size: 20px;
+    font-weight: 200;
+    text-align:center;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2) !important;
+
+    
+}
+.btn:hover{
+    background-color: rgb(81, 81, 127);
+    color: white;
+    text-emphasis:bold;
+    box-shadow: 5px 5px 15px rgba(246, 0, 74, 0.2) !important;
+
+}
+/*button css ends here*/
+/*objectives css starts here*/
+.objectives{
+    grid-area: objectives;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 15px;
+    text-decoration: none;
+   /* background-color: #eff4fb;*/
+    box-shadow: 10px 10px 20px 5px rgba(107, 173, 234, 0.2) !important;
+
+    
+}
+.objectives p , ul {
+    font-size: 25px;
+        font-family: "Vidaloka", serif;
+    font-weight: 400;
+    color: #504E76;
+
+}
+.objectives ul{
+    padding: 25px;
+    list-style: none;
+    display: flex;
+    display: list-item;
+    gap: 20px;
+}
+/*objectives css ends here*/
+/*cusine-types css starts here*/
+.cuisine-types{
+    grid-area: cuisine;
+    margin: 10px;
+    padding: 25px;
+    border-radius: 15px;
+    text-decoration: none; 
+     
+    
+}
+.cuisine-types ul li a:hover{
+    color: white;
+    font-weight: bolder;
+    box-shadow: 10px 10px 20px 5px rgba(239, 237, 150, 0.2) !important;
+
+}
+/*css card */
+.recipeCard{
+    width:250px;
+    background-color: #ffffff;
+    color: #fcfcfc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+}
+
+.cardImage{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding-top:20px;
+}
+.cardBody{
+    padding: 10px;
+    background-color: #edf1f6;
+    display: inline-block;
+    margin-top:30px ;
+}
+.cardTitle{
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #081f5c;
+    text-align: center;
+}
+.cardText{
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #0a0a0a;
+}
+.cardButton{
+    display: inline-block;
+    
+    background-color: #ffeef1;
+    color: rgb(6, 4, 4);
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2) !important;
+    
+    font-family: "Elsie Swash Caps", cursive;
+
+
+    padding: 15px 30px;
+
+    margin: 10px auto;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 200;
+    transition: all 0.3s ease 0s;
+
+   
+}
+.cardButton:hover{
+    background-color: #0f0f3d;
+    color: white;
+    
+}
+.cardImage img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+     object-fit: cover;
+
+}
+
+/*cusine-types css ends here*/
+/*about css starts here*/
+.about{
+    grid-area: about;
+    margin: 30px;
+    padding: 25px;
+    border-radius: 15px;
+    text-decoration: none;
+    /*display: inline-block;
+    width:500px;*/
+    text-align: center;
+    box-shadow: 10px 10px 20px 5px rgba(239, 237, 150, 0.2) !important;
+
+
+    
+}
+.about p{
+    font-size: 25px; 
+
+
+} 
+/*about css ends here*/
+/*contact css starts here */
+.contact{
+    grid-area: contact;
+    margin: 30px;
+    padding: 25px;
+    border-radius: 15px;
+    text-decoration: none;
+    display: inline-block; 
+    text-align: center;
+    box-shadow: 10px 10px 20px 5px rgba(239, 237, 150, 0.2) !important;
+}
+.contact p{
+    text-align: left;
+    font-size: 25px; 
+}
+
+
+/*contact css ends here */
+ 
+/*quote css starts here */
+
+.quote{
+    grid-area: quote;
+    border-radius: 15px;
+    
+    padding-top: 25px;
+    margin: 20px;
+    
+}
+.quote-container{
+    display: flex;
+    gap:5px;  
+    flex-direction: column;
+    align-items: start;
+    
+ }
+blockquote{
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: inline-block;
+    max-width: 100%;
+    height:50%;
+    border-radius: 15px;
+    padding: 50px;
+    color: white; 
+    background-color: lavenderblush;
+ 
+    box-shadow: 0px 0px 15px rgba(255, 182, 193, 0.6) !important;
+
+}
+blockquote p{ 
+    font-weight: 600;
+    font-size: 25px;
+}
+/*quote css ends here */
+/*info css starts here */
+.info{
+    grid-area: info;
+        margin: 30px;
+        padding: 25px;
+        border-radius: 15px;
+        text-decoration: none; 
+        font-size: 22px;
+        
+    }
+    
+    .info ul{
+        padding: 25px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        gap: 20px;
+        justify-content:space-between;
+        text-decoration: none;
+    }
+    
+    .info ul li{
+        display: inline-block;
+        background-color: #bfbfdb;
+        padding: 25px 20px;
+        margin: 20px;
+        font-size: 20px;
+        font-weight: 200;
+        border-radius: 25px;
+        box-shadow: 10px 10px 20px 5px rgba(95, 56, 128, 0.2) !important;
+
+    
+    }
+    .info ul li a{
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+    }
+    .info ul li a:hover{
+        color: rgb(54, 71, 128);
+        font-weight: bolder;
+    }
+    /*info css ends here */
+
+    /*footer css starts here */
+.footer{
+    grid-area: footer;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #edf1f6;
+    border-radius: 20px; 
+}
+/*footer css ends here */
+/*image css*/
+.bc  {
+    grid-area: image;
+    border-radius: 15px;
+    margin: 15px;
+    box-shadow: none;
+    width:auto;
+    height:auto;
+    display: inline-block;
+    background-color:#f5e9d3;
+}
+
+.bc img{
+    border-radius: 15px;
+    max-width: 35%;
+    height: auto;
+    align-content:center ;
+    display: block;
+    margin: 0 auto;
+    
+}
+ 
+/*image css ends here*/
+/*responsivness code*/
+
+
+
+
+/*size 992px*/
+
+@media screen and (max-width:992px){
+
+
+    .container{
+        display:grid;
+        grid-template-areas: "header header header "
+                            "picture picture picture"
+                            " section1  section1 section1"
+                            "objectives objectives cuisine"
+                            "about contact contact"
+                            "image image image"
+                            "info quote quote"
+                            "footer footer footer";
+        gap:20px;
+        padding:30px;
+        margin: 5px;
+    }
+    
+
+    
+    
+
+    h1{
+        font-size:1.90rem;
+    }
+    h2{
+        font-size: 1.65rem;
+    }
+    h3{
+        font-size: 1.45rem;
+    }
+    li {
+        font-size: 1.25rem;
+    }
+    p{
+        font-size: 1.35rem;
+    }
+
+    .br{  
+        padding: 50px;
+
+    }
+    .br img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto ;
+    }
+    
+    }
+
+
+    
+/*size 768px*/
+
+
+@media screen and (max-width:768px){
+
+.container{
+    display:grid;
+    grid-template-areas: "header header   "
+                            "picture  picture"
+                              "section1  section1"
+                            "objectives  objectives"
+                            "cuisine cuisine"
+                            "about   contact"
+                            "image   image"
+                            "info  info"
+                            "quote quote"
+                            "footer   footer";
+    gap:50px;
+    padding:15px;
+    margin: 20px;
+}
+
+h1{
+    font-size:1.95rem;
+
+}
+h2{
+    font-size: 1.25rem;
+}
+h3{
+    font-size: 1.15rem;
+}
+li {
+    font-size: 1.15rem;
+}
+p{
+    font-size: 1.45rem;
+}
+.br{
+    flex-direction: column;
+    justify-content: center;
+}
+.br img{
+    max-width: 80px;
+}
+}    
+
+
+
+
+/*size 576px*/
+
+
+@media screen and (max-width:576px) {
+    .container{
+        display:grid;
+        grid-template-areas: "header  "
+                            "picture  "
+                            "section1   "
+                            "objectives "
+                            " cuisine"
+                            "about"
+                            "contact"
+                            "image"
+                            "info"
+                            "quote "
+                            "footer ";
+        gap:30px;
+        padding:25px;
+        margin: 25px;
+    }
+
+    h1{
+        font-size:1.95rem;
+    }
+    h2{
+        font-size: 1.25rem;
+    }
+    h3{
+        font-size: 1.15rem;
+    }
+    p, li {
+        font-size: 1.15rem;
+    }
+    .header{
+        padding: 5px;
+    }
+    
+    
+}
