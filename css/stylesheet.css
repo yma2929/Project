@@ -41,10 +41,11 @@ body{
     grid-template-areas: "header header header  header"
                         "search search search search"
                         "cuisine cuisine cuisine cuisine   "
+                        "features features features features"
                         "form form quote quote"
                         "footer footer footer footer ";
                         grid-template-columns: 1fr 1fr 1fr 1fr;
-                        grid-template-rows: .15fr .10fr .75fr .55fr .15fr;
+                        grid-template-rows: .15fr .10fr .75fr .45fr .55fr .15fr;
                         grid-gap:10px;
                         margin: 10px; 
                         
@@ -185,13 +186,9 @@ form .button:hover{
     text-decoration: none; 
     
     
+    
 }
-.cuisine-types ul li a:hover{
-    color: white;
-    font-weight: bolder;
-    box-shadow: 10px 10px 20px 5px rgba(239, 237, 150, 0.2) !important;
 
-}
 /*css card */
 .recipeCard{
     width:450px;
@@ -207,6 +204,14 @@ form .button:hover{
     flex-wrap: wrap;
     gap:20px;
     justify-content: center;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2) !important;
+    max-width: 100%;
+    border-radius: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+
 }
 
 .cardImage{
@@ -328,3 +333,49 @@ blockquote p{
     font-size: 15px;
 }
 /*footer css ends here */
+.features{
+
+    grid-area: features;
+}
+.features-container{
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: "quality chef"
+                        "ing easy"
+                        "hot hot";
+    text-align: left;
+    align-items: center;
+    justify-content:center;
+    gap:10px; 
+}
+.quality{
+    grid-area: quality;
+}
+.chef{
+    grid-area: chef;
+}
+.ing{
+    grid-area: ing;
+}
+.easy{
+    grid-area: easy;
+}
+.hot{
+    grid-area: hot;
+}
+
+.features-item{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    margin-right: 50px; 
+
+
+}
+.features-item img{
+    width: 40px;
+    height: auto;
+    border-radius: 50px;
+    margin: 10px;
+}
