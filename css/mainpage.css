@@ -379,3 +379,121 @@ blockquote p{
     border-radius: 50px;
     margin: 10px;
 }
+@media screen and (max-width:992px){
+
+
+    
+    
+.container{
+    grid-template-areas: "header header header  "
+                        "search search search "
+                        "cuisine cuisine cuisine    "
+                        "features features features "
+                        "form form quote "
+                        "footer footer footer  ";
+                        gap:20px;
+        padding:30px;
+        margin: 5px;
+                        
+   
+}
+    
+
+    
+    
+
+    h1{
+        font-size:1.90rem;
+    }
+    h2{
+        font-size: 1.65rem;
+    }
+    h3{
+        font-size: 1.45rem;
+    }
+    li {
+        font-size: 1.25rem;
+    }
+    p{
+        font-size: 1.35rem;
+    }
+
+
+    
+    }
+
+
+    
+/*size 768px*/
+
+
+@media screen and (max-width:768px){
+
+.container{
+    display:grid;
+    grid-template-areas: "header header   "
+                        "search search  "
+                        "cuisine cuisine     "
+                        "features features  "
+                        "form form "
+                        "quote quote"
+                        "footer footer   ";
+    gap:50px;
+    padding:15px;
+    margin: 20px;
+}
+
+h1{
+    font-size:1.95rem;
+
+}
+h2{
+    font-size: 1.25rem;
+}
+h3{
+    font-size: 1.15rem;
+}
+li {
+    font-size: 1.15rem;
+}
+p{
+    font-size: 1.45rem;
+}
+}    
+
+
+
+
+/*size 576px*/
+
+
+@media screen and (max-width:576px) {
+    .container{
+        
+        grid-template-areas: "header "
+                        "search "
+                        "cuisine "
+                        "features"
+                        "form"
+                        "quote "
+                        "footer";
+        gap:30px;
+        padding:25px;
+        margin: 25px;
+    }
+
+    h1{
+        font-size:1.95rem;
+    }
+    h2{
+        font-size: 1.25rem;
+    }
+    h3{
+        font-size: 1.15rem;
+    }
+    p, li {
+        font-size: 1.15rem;
+    }
+    
+    
+}

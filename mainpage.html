@@ -8,7 +8,7 @@
         <meta name="keywords" content="recipes, food, cooking, cuisine, meals">
         <link rel="icon" type="image/png"  sizes = "32x32" href="./media/webLogo.png">
 
-        <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="./css/mainpage.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,12 +35,12 @@
         
         </header>
 
-        <section class="search search-container">
+        <div class="search search-container">
             <input type="text" id="searchInput" class="searchBox" placeholder="Search for recipes using their name..">
             <button class="searchButton">🔍</button>
             
 
-        </section>
+        </div>
 
         <section class="cuisine-types item">
             <h2>🎐 Cuisines </h2>
@@ -49,7 +49,7 @@
             <div class="cardcontainer">
 
                 <div class="recipeCard">
-                    <div class="cardImage"> <img src="./media/foodPics/italian.jpg" > </div>
+                    <div class="cardImage"> <img src="./media/foodPics/italian.jpg" alt="a picture that represents italian cuisine" > </div>
                         <div class="cardBody">
                             <div class="cardTitle">Italian</div>
                             <p class="cardText">Known for its simplicity and fresh ingredients, Italian food features pasta, tomatoes, olive oil, cheese, and herbs. Classics like pizza, lasagna, and risotto bring comfort and bold flavors to the table.</p>
@@ -58,7 +58,7 @@
                  </div>
                  
                  <div class="recipeCard">
-                    <div class="cardImage"> <img src="./media/foodPics/american.jpg" > </div>
+                    <div class="cardImage"> <img src="./media/foodPics/american.jpg" alt="a picture that represents american cuisine" > </div>
                         <div class="cardBody">
                             <div class="cardTitle">American</div>
                             <p class="cardText">A melting pot of diverse flavors, American cuisine ranges from juicy burgers and BBQ to comfort foods like mac and cheese and hearty breakfasts. It blends global influences into unique, indulgent dishes.</p>
@@ -67,7 +67,7 @@
                  </div>
 
                  <div class="recipeCard">
-                    <div class="cardImage"> <img src="./media/foodPics/middleeast.jpg" > </div>
+                    <div class="cardImage"> <img src="./media/foodPics/middleeast.jpg" alt="a picture that represents middle eastern  cuisine"> </div>
                         <div class="cardBody">
                             <div class="cardTitle">Middle Eastern</div>
                             <p class="cardText">A rich blend of flavors featuring aromatic spices, grilled meats, fresh herbs, and staple ingredients like olives, chickpeas, and tahini. Dishes like hummus, kebabs, and falafel are popular worldwide.</p>
@@ -84,33 +84,33 @@
 
         <h2>💡Our Awesome features</h2>
         
-        <section class="features-container">
+        <div class="features-container">
             <section class="features-item quality">
-            <img src="./media/sec/quality.jpg">
-            <h3>Quality Food 🍴 </h3>
+            <img src="./media/sec/quality.jpg" alt="Picture denoting good quality food">
+            <h3> Quality Food 🍴 </h3>
         </section>
 
         <section class="features-item chef">
-                <img src="./media/sec/chef.jpg">
-                <h3>Cook like a chef 🧑‍🍳</h3>
+                <img src="./media/sec/chef.jpg" alt="Picture of a chef">
+                <h3> Cook like a chef 🧑‍🍳</h3>
         </section>
 
         <section class="features-item ing">
-                <img src="./media/sec/ing.jpg">
-                <h3>Ingredients 📝</h3>
+                <img src="./media/sec/ing.jpg" alt="Picture of ingredients">
+                <h3> Ingredients 📝</h3>
         </section>
 
         <section class="features-item easy">
-            <img src="./media/sec/easy.jpg">
-                <h3>Easy Recipes 🍳</h3>
+            <img src="./media/sec/easy.jpg" alt="Picture of a simple recipe">
+                <h3> Easy Recipes 🍳</h3>
         </section>
                 
         <section class="features-item hot">
-                <img src="./media/sec/hot.jpg">
-                <h3>Serve Hot ☕</h3>
+                <img src="./media/sec/hot.jpg" alt="Picture of a hot drink">
+                <h3> Serve Hot ☕</h3>
         </section>
 
-        </section>
+        </div>
 
     </section>
 
@@ -142,42 +142,44 @@
                     <input type="tel" name="phoneNum" size="35" minlength="9" maxlength="9" pattern="[0-9]{9}" placeholder="e.g 055452349">
                 </label>
             </p>
-            <p>
+            
                 <label>Which web page did you like best?</label>
                 <p>
                     <label>
                     <input type="checkbox" value="mainpage" id="index" name="websitePages">
                     Main page </label>
                     <label>
-                        <input type="checkbox" value="contact" id="index" name="websitePages">
+                        <input type="checkbox" value="contact" id="contact" name="websitePages">
                     Contact Us </label>
                     <label>
-                        <input type="checkbox" value="about" id="index" name="websitePages">
+                        <input type="checkbox" value="about" id="about" name="websitePages">
                     About Us  </label>
                     <label>
-                        <input type="checkbox" value="recipe" id="index" name="websitePages">
+                        <input type="checkbox" value="recipe" id="recipe" name="websitePages">
                     Recipes</label>
                 </p>
-            </p>
-            <p>
+           
                 <label> Which Recipe did you follow?</label>
                 <p>
                     <label>
-                        <input type="checkbox" value="r1" id="index" name="recipeType">
-                        r1 </label>
+                        <input type="checkbox" value="Kabsa" id="kabsa" name="recipeType">
+                        Kabsa </label>
                         <label>
-                            <input type="checkbox" value="r2" id="index" name="recipeType">
-                        r2 </label>
+                            <input type="checkbox" value="Shawarma" id="shawarma" name="recipeType">
+                        Shawarma </label>
                         <label>
-                            <input type="checkbox" value="r3" id="index" name="recipeType">
-                        r3  </label>
+                            <input type="checkbox" value="Fattoush" id="Fattoush" name="recipeType">
+                        Fattoush</label>
                         <label>
-                            <input type="checkbox" value="r4" id="index" name="recipeType">
-                        r4</label>
+                            <input type="checkbox" value="Manakish" id="Manakish" name="recipeType">
+                            Manakish
+                        </label>
+                        <label>
+                            <input type="checkbox" value="Ma’amoul" id="Ma’amoul" name="recipeType">
+                            Ma’amoul</label>
                 </p>
-            </p>
-            <p>
-                <label> Rate the recipe:</label>
+            
+            <label> Rate the recipe:</label>
                 <p>
                     <label>
                         <input type="radio" name="recipeRate" value="1"> ⭐
@@ -198,7 +200,7 @@
                     
                     
                 </p>
-            </p>
+            
             <p>
                 <label for="textarea">Please provide any comments:</label>
             </p>

@@ -1,8 +1,12 @@
-
+ul li{
+    font-size: 18px;
+    font-family: "Vidaloka", serif;
+    font-weight: 500;
+}
 p{
     font-family: "Vidaloka", serif;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 20px;
     color: #504E76;
 }
 
@@ -11,7 +15,7 @@ p{
     font-family: "Vidaloka", serif;
     color: #262272;
     padding: 25px;
-    font-size: 18px;
+    font-size: 15px;
 }
 h1{
     font-family:"Playfair Display", serif;
@@ -37,12 +41,11 @@ body{
         "search search search search"
         "direct direct direct direct"
         "head head head head   "
-        " recipes recipes  recipes recipes  "
-        " recipes recipes  recipes recipes  "
+        " recipes recipes  recipes recipes"
         "footer footer footer footer ";
         grid-template-columns: 1fr 1fr 1fr 1fr ;
-       /* grid-template-rows: .15fr .5fr .56fr .4fr .2fr .34fr .25fr;
-        */grid-gap:15px;
+       grid-template-rows: .01fr .05fr .02fr .015fr .5fr .01fr;
+        grid-gap:15px;
         margin: 10px;
 }
 .direct{
@@ -74,32 +77,36 @@ body{
     
 }
 .recipes-navbar li{
-    padding: 10px;
-    margin: 10px;
-    color: #081f5c;
+    padding: 15px;
+    margin: 25px;
+    color: #19293b;
     font-family: "Vidaloka", serif;
     font-weight: 500;
     font-size: 20px;
     border-radius: 25px;
     cursor: pointer;
     transition: 0.3s ease;
-    background-color: #9696e8;
+    background-color: #EFE8D5;
     
 }
 .recipes-navbar ul li a{
-    color:#edf1f6;
+    color:#19293b;
     text-decoration: none;
 }
-.recipes-navbar li:hover{
-    background-color: #504E76;
+.recipes-navbar li:hover {
+    background-color: #cc8c8d;
     color: #fcfaf8;
     font-weight: 900;
     font-size: larger;
+}
+.recipes-navbar li:hover a{
+    text-decoration:underline;
 }
 
 .search{
     grid-area: search;
 }
+
 .search-container{
     display: flex;
     justify-content: center;
@@ -220,8 +227,9 @@ img.logo{
     "Manakish Manakish Manakish Manakish"
     "Ma’amoul Ma’amoul Ma’amoul Ma’amoul";
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 0px;
+    grid-gap: 10px;
     margin: 10px;
+    padding: 20px;
 }
 .kabsa{
     grid-area: kabsa;
@@ -256,23 +264,28 @@ img.logo{
     font-family: "Vidaloka", serif;
     font-weight: 500;
 }
-
-
-.card.kabsa{
-    background-color: antiquewhite;
-    border-radius: 15px;
+.card{
+    border-radius: 20px;
     padding: 20px;
-    margin: 10px;
+    margin: 20px;
     box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2) !important;
+}
+.card.kabsa  {
+    background-color: #CACE91;
+    
+}
+.card.Ma’amoul{
+    background-color:#F3EDBD;
+}
+.card.fattoush{
+    background-color:#EDCDD1;
+}
+.card.Manakish{
+    background-color:#dfdef5;
 }
 .card.shawarma{
-    background-color: antiquewhite;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2) !important;
+    background-color:#ADB8D6;
 }
-
 .card h3{
     font-family: "Vidaloka", serif;
     font-weight: 500;
@@ -291,10 +304,11 @@ img.logo{
     grid-template-areas: "ingredients spices img "
     "instructions instructions  img";
     grid-template-columns: .5fr .5fr 1fr; 
-    padding: 20px;
+    grid-template-rows: .25fr .2fr;
+    padding: 10px;
     margin: 10px;
     border-radius: 15px;
-    background-color: #edf1f6;
+    background-color: #FFFBF2;
     box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2) !important;
 }
 .instructions  {
@@ -339,7 +353,7 @@ img.logo{
     grid-area:img;
     display: flex;
     justify-content: right;
-    align-items: right;
+     
     padding: 20px;
 }
 .recipe-image img{
