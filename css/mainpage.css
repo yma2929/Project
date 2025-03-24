@@ -90,7 +90,12 @@ header{
     font-weight: 900;
     font-size: larger;
 }
-
+.menuIcon{
+    display: none;
+}
+#menu-Toggle{
+    display: none;
+}
 .logo{
     cursor: pointer;
     margin-right: auto;
@@ -459,7 +464,30 @@ li {
 p{
     font-size: 1.45rem;
 }
-}    
+.navBar{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top:80px;
+    left:0;
+    width: 100%;
+    background-color: #edf1f6;
+    border-radius: 15px;
+    padding: 15px;
+}
+#menu-Toggle:checked + .menuIcon +nav .navBar{
+    display: flex;
+}   
+.menuIcon{
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: #081f5c;
+    margin-right: 20px;
+}
+.menuIcon:hover{
+    color: #504E76;
+} 
 
 
 
@@ -496,4 +524,5 @@ p{
     }
     
     
+}
 }
