@@ -75,7 +75,8 @@ header{
 .navBar{
     list-style: none;
     display:flex;
-    gap:20px
+    gap:10px;
+    padding: 0;
 }
 .navBar li{
     display: inline;
@@ -84,6 +85,7 @@ header{
 }
 .navBar li a{
     transition: all 0.3s ease 0s;
+    white-space: nowrap;
 }
 .navBar li a:hover{
     color: rgb(128, 13, 13) !important;
@@ -115,6 +117,7 @@ img.logo{
 .search-container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     margin: 20px auto;
     height: 10%;
@@ -447,7 +450,12 @@ blockquote p{
     padding:15px;
     margin: 20px;
 }
-
+header{
+    justify-content: space-evenly;
+}
+img.logo{
+    max-width: 45%;
+}
 h1{
     font-size:1.95rem;
 
