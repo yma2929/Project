@@ -439,13 +439,13 @@ blockquote p{
 
 .container{
     display:grid;
-    grid-template-areas: "header header   "
-                        "search search  "
-                        "cuisine cuisine     "
-                        "features features  "
-                        "form form "
-                        "quote quote"
-                        "footer footer   ";
+    grid-template-areas: "header header header   "
+                        "search search search  "
+                        "cuisine  cuisine cuisine     "
+                        "features features  features "
+                        "form  form form "
+                        "quote quote quote"
+                        "footer  footer footer   ";
     gap:50px;
     padding:15px;
     margin: 20px;
