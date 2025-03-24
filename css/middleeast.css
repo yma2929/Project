@@ -1,0 +1,366 @@
+
+p{
+    font-family: "Vidaloka", serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #504E76;
+}
+
+.contact strong{
+    text-align: center;
+    font-family: "Vidaloka", serif;
+    color: #262272;
+    padding: 25px;
+    font-size: 18px;
+}
+h1{
+    font-family:"Playfair Display", serif;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 65px;
+    color: #081f5c;
+}
+h2{
+    color:#364C84;
+    font-family:"Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+}
+body{
+    background-color:#fcfaf8 ;
+}
+.container{
+    display: grid;
+    grid-template-areas:
+        "header header header header "
+        "search search search search"
+        "direct direct direct direct"
+        "head head head head   "
+        " recipes recipes  recipes recipes  "
+        " recipes recipes  recipes recipes  "
+        "footer footer footer footer ";
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+       /* grid-template-rows: .15fr .5fr .56fr .4fr .2fr .34fr .25fr;
+        */grid-gap:15px;
+        margin: 10px;
+}
+.direct{
+    grid-area: direct;
+}
+.direct h5{
+    text-align: center;
+    font-size: 20px;
+
+}
+.recipes-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    height: 10%;
+    width: 50%;
+    border-radius: 25px;    
+    flex-direction: row;
+}
+.recipes-navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+.recipes-navbar li{
+    padding: 10px;
+    margin: 10px;
+    color: #081f5c;
+    font-family: "Vidaloka", serif;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: #9696e8;
+    
+}
+.recipes-navbar ul li a{
+    color:#edf1f6;
+    text-decoration: none;
+}
+.recipes-navbar li:hover{
+    background-color: #504E76;
+    color: #fcfaf8;
+    font-weight: 900;
+    font-size: larger;
+}
+
+.search{
+    grid-area: search;
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    height: 10%;
+    width: 50%;
+    border-radius: 25px;
+}
+.searchBox{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px ;
+    width: 100%;
+    border-radius: 25px;
+    font-size: 15px;
+    font-family:"Playfair Display", serif;
+    margin: 0px;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2) !important;
+}
+.searchButton{
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    font-size: 25px;
+}
+.searchButton:hover{
+    background-color: #504E76;
+}
+.picture{
+    
+    grid-area:picture;
+ 
+    margin-left: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    
+
+}
+.picture img{ 
+    padding: 40px;  
+    max-width: 120%;
+    height: auto; 
+    border-radius: 15px;
+        
+    box-shadow: none;
+
+}
+header{
+    grid-area: header;
+    display:block;
+    background-color: #edf1f6;
+    margin:20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    
+    border-radius: 25px;
+
+}
+.h1header{
+    grid-area: head;
+}
+/* nav css starts here */
+#navArea li a{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    font-size: 16px;
+    color: #0f0f3d;
+    text-decoration: none;
+}
+
+.navBar{
+    list-style: none;
+    display:flex;
+    gap:20px
+}
+.navBar li{
+    display: inline;
+    padding: 0 20px;
+    color:#081f5c
+}
+.navBar li a{
+    transition: all 0.3s ease 0s;
+}
+.navBar li a:hover{
+    color: rgb(128, 13, 13) !important;
+    font-weight: 900;
+    font-size: larger;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+img.logo{
+    border-radius: 15px;
+}
+.recipes {
+    grid-area: recipes;
+}
+
+
+
+.recipes-container{
+    display: grid;
+    grid-template-areas: "kabsa kabsa kabsa kabsa"
+    "shawarma shawarma shawarma shawarma"
+    "fattoush fattoush fattoush fattoush"
+    "Manakish Manakish Manakish Manakish"
+    "Ma’amoul Ma’amoul Ma’amoul Ma’amoul";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0px;
+    margin: 10px;
+}
+.kabsa{
+    grid-area: kabsa;
+}
+.shawarma{
+    grid-area: shawarma;
+}
+.fattoush{
+    grid-area: fattoush;
+}
+.Manakish{
+    grid-area: Manakish;
+}
+.Ma’amoul{
+    grid-area: Ma’amoul;
+}
+
+.recipe-details{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content:space-between;
+    margin: 15px;
+    padding: 5px 20px;
+    max-width: 20%;
+}
+
+.recipe-details li{
+    padding: 5px;
+    color: #010101;
+    font-size: 15px;
+    font-family: "Vidaloka", serif;
+    font-weight: 500;
+}
+
+
+.card.kabsa{
+    background-color: antiquewhite;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2) !important;
+}
+.card.shawarma{
+    background-color: antiquewhite;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2) !important;
+}
+
+.card h3{
+    font-family: "Vidaloka", serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #504E76;
+}
+.card h4{
+    font-family: "Vidaloka", serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #504E76;
+}
+
+.recipe-description{
+    display: grid;
+    grid-template-areas: "ingredients spices img "
+    "instructions instructions  img";
+    grid-template-columns: .5fr .5fr 1fr; 
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #edf1f6;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2) !important;
+}
+.instructions  {
+    
+    grid-area: instructions;
+
+}
+.instructions ul{
+    list-style: none;
+    padding: 25px;
+    justify-content:space-between;
+    text-decoration: none;
+}
+
+.ingredients ul{
+    list-style: none;
+    padding: 15px;
+    justify-content:space-between;
+    text-decoration: none;
+}
+.ingredients ul li::before{
+    content:"🥄";
+    margin-right: 8px;
+    color: #504E76;
+}
+.spices {
+    
+    grid-area: spices;
+}
+.spices ul{
+    list-style: none;
+    padding: 15px;
+    justify-content:space-between;
+    text-decoration: none;
+}
+.spices ul li::before{
+    content:" 🌿 ";
+    margin-right: 8px;
+    color: #504E76;
+}
+.recipe-image{
+    grid-area:img;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding: 20px;
+}
+.recipe-image img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2) !important;
+    object-fit: cover;
+}
+
+/*footer css starts here */
+.footer{
+    grid-area: footer;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #edf1f6;
+    border-radius: 20px; 
+}
+/*footer css ends here */

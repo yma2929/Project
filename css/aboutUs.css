@@ -1,3 +1,4 @@
+
 header{
     grid-area: header;
     display:block;
@@ -56,7 +57,8 @@ p{
 }  
 
 body {
-    background-color: #a7c1cd;
+    
+    background-color: #fcfaf8;
     color: #504E76;
     text-align: center; 
     text-decoration: solid;
