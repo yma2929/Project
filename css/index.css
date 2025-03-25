@@ -562,6 +562,13 @@ p{
 .br img{
     max-width: 80px;
 }
+.quote-container{
+    padding: 10px;
+    margin: 0;
+}
+blockquote p{
+    font-size: .95rem;
+}
 }    
 
 
@@ -608,7 +615,13 @@ p{
         padding: 10px;
     }
     
-    
+    .quote-container{
+        padding: 10px;
+        margin: 0;
+    }
+    blockquote p{
+        font-size: .95rem;
+    }
     
     .navBar {
         flex-direction: column;
