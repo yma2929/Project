@@ -446,15 +446,29 @@ blockquote p{
                         "form  form form "
                         "quote quote quote"
                         "footer  footer footer   ";
-    gap:50px;
-    padding:15px;
-    margin: 20px;
+    gap:10px;
+    padding:10px;
+    margin: 10px;
+}
+footer .footer{
+    
+    padding-bottom: 1px;
 }
 header{
     justify-content: space-evenly;
 }
+.recipeCard{
+    width:100%;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    color: #fcfcfc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:  0 4px 8px rgba(5, 10, 36, 0.3);
+}
 img.logo{
-    max-width: 45%;
+    max-width: 96%;
 }
 h1{
     font-size:1.95rem;
@@ -470,7 +484,24 @@ li {
     font-size: 1.15rem;
 }
 p{
-    font-size: 1.45rem;
+    font-size: 1.25rem;
+}
+.cardBody p{
+    font-size: .95rem;
+}
+.cardTitle{
+    font-size: 1.25rem;
+    text-align: center;
+}
+.cardButton{
+    font-size: .95rem;
+    padding: 15px;
+    margin: 35px;
+}
+.cardBody{
+    width: 100%;
+    padding: 4px;
+    margin: 0;
 }
 .navBar{
     display: none;
@@ -497,8 +528,19 @@ p{
     color: #504E76;
 } 
 
+.search-container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-
+.quote-container{
+    padding: 10px;
+    margin: 0;
+}
+blockquote p{
+    font-size: .95rem;
+}
 
 /*size 576px*/
 

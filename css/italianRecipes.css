@@ -1,0 +1,187 @@
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    padding: 25px 5%;
+    width: 90%;
+    background-color: #edf1f6;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo {
+    cursor: pointer;
+    width: 90px;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+#navArea {
+    display: flex;
+    background: none;
+}
+
+.navBar {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+.navBar li {
+    display: inline;
+    padding: 0 20px;
+    color: #081f5c;
+    background: none;
+}
+
+#navArea li a {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    font-size: 16px;
+    color: #0f0f3d;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#navArea li a:hover {
+    color: rgb(13, 10, 55);
+    font-weight: 900;
+    font-size: larger;
+}
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.recipe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.recipe .content {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #2e2e2e;
+}
+
+.category {
+    display: inline-block;
+    background-color: #040303;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.image-container img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+
+
+.footer{
+    grid-area: footer;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #edf1f6;
+    border-radius: 20px; 
+}
+
+@media screen and (max-width: 992px), 
+       screen and (max-width: 768px), 
+       screen and (max-width: 576px) {
+
+  
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 5%;
+    }
+
+    .logo {
+        width: 60px; 
+    }
+
+    .navBar {
+        flex-direction: column;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navBar li {
+        margin-bottom: 10px;
+    }
+
+    .container {
+        width: 85%;
+        padding: 25px 0;
+    }
+
+    .recipe {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .recipe .content {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 30px; 
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    
+    .footer {
+        font-size:14px;
+        padding:10px;
+}
+}
