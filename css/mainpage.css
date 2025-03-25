@@ -454,9 +454,26 @@ footer .footer{
     
     padding-bottom: 1px;
 }
-header{
-    justify-content: space-evenly;
+header {
+    margin: 20px;
+    flex-direction: column;
+    padding: 15px;
 }
+
+
+
+.navBar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.navBar li {
+    padding: 5px 0;
+}
+
+
 .recipeCard{
     width:100%;
     padding: 0;
@@ -503,30 +520,7 @@ p{
     padding: 4px;
     margin: 0;
 }
-.navBar{
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top:80px;
-    left:0;
-    width: 100%;
-    background-color: #edf1f6;
-    border-radius: 15px;
-    padding: 15px;
-}
-#menu-Toggle:checked + .menuIcon +nav .navBar{
-    display: flex;
-}   
-.menuIcon{
-    display: block;
-    font-size: 30px;
-    cursor: pointer;
-    color: #081f5c;
-    margin-right: 20px;
-}
-.menuIcon:hover{
-    color: #504E76;
-} 
+
 
 .search-container{
     width: 100%;
@@ -559,6 +553,26 @@ blockquote p{
         padding:25px;
         margin: 25px;
     }
+    
+header {
+    margin: 15px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+
+.navBar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.navBar li {
+    padding: 5px 0;
+}
+
 
     h1{
         font-size:1.95rem;
