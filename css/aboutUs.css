@@ -35,9 +35,9 @@ header{
     transition: all 0.3s ease 0s;
 }
 .navBar li a:hover{
-    color: rgb(128, 13, 13) !important;
+    color: rgb(5, 19, 37) !important;
     font-weight: 900;
-    font-size: larger;
+    font-size: 20px !important;
 }
 
 .logo{
@@ -132,4 +132,53 @@ footer p{
     font-weight: 500;
     font-size: 15px;
     color: #504E76;
+}
+
+/* Responsive Design */
+@media all and (max-width: 992px) { 
+    header{
+        padding: 25px 5%;
+    }
+    #navArea li a{
+        font-size: 14px;
+    }
+    .logo{
+        margin-right: 0;
+    }
+    h1{
+        font-size: 45px;
+    }
+    table {
+        width: 90%;
+    }
+    table img {
+        width: 70px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+}
+@media all  and (min-width: 768px) and (max-width:576px) {
+    header{
+        padding: 25px 5%;
+    }
+    #navArea li a{
+        font-size: 14px;
+    }
+    .logo{
+        margin-right: 0;
+    }
+    h1{
+        font-size: 45px;
+    }
+    table {
+        width: 90%;
+    }
+    table img {
+        width: 70px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    
 }

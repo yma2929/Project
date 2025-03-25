@@ -108,9 +108,9 @@ header{
     transition: all 0.3s ease 0s;
 }
 .navBar li a:hover{
-    color: rgb(128, 13, 13) !important;
+    color: rgb(5, 19, 37) !important;
     font-weight: 900;
-    font-size: larger;
+    font-size: 20px !important;
 }
 
 
@@ -286,3 +286,250 @@ img.logo{
     border-radius: 20px; 
 }
 /*footer css ends here */
+
+@media all and (max-width:992px){
+
+    .container{
+        grid-template-areas:
+        "header header header   "
+        "head head head     "
+        " recipes recipes  recipes  "
+        "footer footer footer   ";
+        grid-template-columns: 1fr 1fr 1fr  ;
+        grid-gap:20px;
+        margin: 15px;
+    }
+    
+    h1{
+        font-size:1.90rem;
+    }
+    h2{
+        font-size: 1.65rem;
+    }
+    h3{
+        font-size: 1.45rem;
+    }
+    li {
+        font-size: 1.25rem;
+    }
+    p{
+        font-size: 1.35rem;
+    }
+    .recipe-description{
+        display: grid;
+        grid-template-areas: "ingredients  spices "
+        "instructions instructions  "
+        " img img ";
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: .55fr .5fr .65fr;
+        padding: 10px;
+        margin: 5px;
+    }
+    
+.recipe-details{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content:stretch;
+    margin: 15px;
+    padding: 5px 10px;
+    max-width: 100%;
+    
+}  
+.recipe-details ul li{
+    font-size: 25px;
+}
+
+}
+@media all and (max-width:768px){
+    header {
+        margin: 15px;
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    
+    
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    
+    .navBar li {
+        padding: 5px 0;
+    }
+    .container{
+        grid-template-areas:
+        "header header     "
+        "head head       "
+        " recipes recipes     "
+        "footer footer     ";
+        grid-template-columns: 1fr 1fr   ;
+        grid-gap:20px;
+        margin: 15px;
+    }
+    h1{
+        font-size:1.95rem;
+    
+    }
+    h2{
+        font-size: 1.25rem;
+    }
+    h3{
+        font-size: 1.15rem;
+    }
+    li {
+        font-size: 1.15rem;
+    }
+    p{
+        font-size: 1.45rem;
+    }
+    
+    
+.recipe-description{
+    display: grid;
+    grid-template-areas: "ingredients  ingredients "
+    "spices spices "
+    "instructions instructions  "
+    " img img ";
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: .55fr .5fr .65fr;
+    padding: 10px;
+    margin: 5px;
+}
+.recipe-details{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content:space-between;
+    margin: 15px;
+    padding: 5px 10px;
+    max-width: 40%;
+    
+}  
+.recipe-details ul li{
+    font-size: 20px;
+}
+
+.card{
+    width:100%;
+    padding: 10px;
+}
+.recipe-description ul li {
+    padding: 0;
+    color: #010101;
+    font-size: 20px;
+    font-family: "Vidaloka", serif;
+    
+
+}
+.recipe-image{
+    grid-area:img;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%; 
+    padding: 20px;
+}
+    .recipe-image img{
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+}
+
+@media all and (max-width:576px) {
+    header {
+        margin: 15px;
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    
+    
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    
+    .navBar li {
+        padding: 5px 0;
+    }
+    .container{
+        grid-template-areas:
+        "header       "
+        "head         "
+        " recipes       "
+        "footer       ";
+        grid-template-columns: 1fr    ;
+        grid-gap:20px;
+        margin: 15px;
+    }
+    h1{
+        font-size:1.95rem;
+    }
+    h2{
+        font-size: 1.25rem;
+    }
+    h3{
+        font-size: 1.15rem;
+    }
+    
+    
+.recipe-description{
+    display: grid;
+    grid-template-areas: "ingredients  ingredients "
+    "spices spices "
+    "instructions instructions  "
+    " img img ";
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: .55fr .5fr .65fr;
+    padding: 10px;
+    margin: 5px;
+}
+.recipe-details{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content:space-between;
+    margin: 15px;
+    padding: 5px 10px;
+    max-width: 40%;
+    
+}  
+.recipe-details ul li{
+    font-size: 20px;
+}
+
+.card{
+    width:100%;
+    padding: 10px;
+}
+.recipe-description ul li {
+    padding: 0;
+    color: #010101;
+    font-size: 20px;
+    font-family: "Vidaloka", serif;
+    
+
+}
+.recipe-image{
+    grid-area:img;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%; 
+    padding: 20px;
+}
+    .recipe-image img{
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+}

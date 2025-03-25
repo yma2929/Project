@@ -11,55 +11,54 @@ body {
     line-height: 1.6;
 }
 
-.exact-header {
-    width: 100%;
-    background-color: #f0f5fa; 
-    padding: 80px 0;
-    margin-bottom: 30px;
-    border-radius: 55px;
-}
 
-.header-container {
-    display: flex;
+header{
+    grid-area: header;
+    display:block;
+    background-color: #edf1f6;
+    margin:20px;
+    display:flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+    padding: 25px 10%;
+    
+    border-radius: 25px;
 
-.logo-container {
-    flex: 0 0 auto;
 }
-
-.logo {
-    width: 100px;
-    height: 100px;
-    object-fit: cover; 
-    border-radius: 0; 
-}
-
-.main-nav {
-    flex: 0 0 auto;
-}
-
-.main-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 40px; 
-}
-
-.main-nav ul li a {
-    color: #3d4555;
-    text-decoration: none;
+/* nav css starts here */
+#navArea li a{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
     font-size: 16px;
-    font-weight: 500;
-    transition: color 0.3s;
-    font-family: 'Playfair Display', serif;
+    color: #0f0f3d;
+    text-decoration: none;
 }
 
-.main-nav ul li a:hover {
-    color: #5c5f44;
+.navBar{
+    list-style: none;
+    display:flex;
+    gap:20px
+}
+.navBar li{
+    display: inline;
+    padding: 0 20px;
+    color:#081f5c;
+}
+.navBar li a{
+    transition: all 0.3s ease 0s;
+}
+.navBar li a:hover{
+    color: rgb(5, 19, 37) !important;
+    font-weight: 900;
+    font-size: 20px !important;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+img.logo{
+    border-radius: 15px;
 }
 
 main {

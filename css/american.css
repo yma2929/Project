@@ -54,10 +54,9 @@ header {
 }
 
 .navBar li a:hover {
-    color: rgb(128, 13, 13) !important;
+    color: rgb(5, 19, 37) !important;
     font-weight: 900;
-    
-    font-size: larger;
+    font-size: 20px !important;
 }
 
 .logo {
