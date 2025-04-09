@@ -39,13 +39,12 @@ body{
 .container{
     display: grid;
     grid-template-areas: "header header header  header"
-                        "search search search search"
                         "cuisine cuisine cuisine cuisine   "
                         "features features features features"
                         "form form quote quote"
                         "footer footer footer footer ";
                         grid-template-columns: 1fr 1fr 1fr 1fr;
-                        grid-template-rows: .15fr .10fr .75fr .45fr .55fr .15fr;
+                        grid-template-rows: .15fr  .75fr .45fr .55fr .15fr;
                         grid-gap:10px;
                         margin: 10px; 
                         
@@ -110,43 +109,7 @@ img.logo{
 .userOpinion{
     
     grid-area: form;
-}
-.search{
-    grid-area: search;
-}
-.search-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 20px auto;
-    height: 10%;
-    width: 50%;
-    border-radius: 25px;
-}
-.searchBox{
-    flex: 1;
-    border: none;
-    outline: none;
-    padding: 12px ;
-    width: 100%;
-    border-radius: 25px;
-    font-size: 15px;
-    font-family:"Playfair Display", serif;
-    margin: 0px;
-    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2) !important;
-}
-.searchButton{
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 50%;
-    transition: 0.3s ease;
-    font-size: 25px;
-}
-.searchButton:hover{
-    background-color: #504E76;
+
 }
 form{
     background-color: #f5eef7;
@@ -394,7 +357,6 @@ blockquote p{
     
 .container{
     grid-template-areas: "header header header  "
-                        "search search search "
                         "cuisine cuisine cuisine    "
                         "features features features "
                         "form form quote "
@@ -440,7 +402,6 @@ blockquote p{
 .container{
     display:grid;
     grid-template-areas: "header header header   "
-                        "search search search  "
                         "cuisine  cuisine cuisine     "
                         "features features  features "
                         "form  form form "
@@ -543,7 +504,6 @@ blockquote p{
     .container{
         
         grid-template-areas: "header "
-                        "search "
                         "cuisine "
                         "features"
                         "form"
