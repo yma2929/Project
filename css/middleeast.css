@@ -38,13 +38,52 @@ body{
     display: grid;
     grid-template-areas:
         "header header header header "
+        "search search search search "
         "head head head head   "
         " recipes recipes  recipes recipes"
         "footer footer footer footer ";
         grid-template-columns: 1fr 1fr 1fr 1fr ;
-       grid-template-rows: .01fr   .015fr .5fr .01fr;
+       grid-template-rows: .01fr 0.10fr  .015fr .5fr .01fr;
         grid-gap:15px;
         margin: 10px;
+}
+
+.search{
+    grid-area: search;
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px auto;
+    height: 10%;
+    width: 50%;
+    border-radius: 25px;
+}
+.searchBox{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px ;
+    width: 100%;
+    border-radius: 25px;
+    font-size: 15px;
+    font-family:"Playfair Display", serif;
+    margin: 0px;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2) !important;
+}
+.searchButton{
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    font-size: 25px;
+}
+.searchButton:hover{
+    background-color: #504E76;
 }
 
 .picture{
@@ -292,6 +331,7 @@ img.logo{
     .container{
         grid-template-areas:
         "header header header   "
+        "search search search  "
         "head head head     "
         " recipes recipes  recipes  "
         "footer footer footer   ";
@@ -363,6 +403,7 @@ img.logo{
     .container{
         grid-template-areas:
         "header header     "
+        "search search"
         "head head       "
         " recipes recipes     "
         "footer footer     ";
@@ -463,6 +504,7 @@ img.logo{
     .container{
         grid-template-areas:
         "header       "
+        "search"
         "head         "
         " recipes       "
         "footer       ";
