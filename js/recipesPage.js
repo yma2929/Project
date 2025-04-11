@@ -1,3 +1,5 @@
+
+//search bar code starts here
 const searchinput= document.getElementById('searchInput');
 const recipeCard = document.querySelectorAll('.card');
 const searchbtn = document.getElementById('searchButton');
@@ -17,14 +19,6 @@ function searchRecipes(){
 }
 
 
-searchinput.addEventListener('click', searchRecipes);
+searchinput.addEventListener('input', searchRecipes);
 
-
-
-
-
-
-
-
-
-
+//search bar code ends here
