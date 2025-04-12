@@ -97,6 +97,7 @@ function validateform() {
     if(validName && validEmail && validPhone && validRating) {
 
  window.alert("Form submitted successfully!");
+ form.submit();
     }
     
 }
