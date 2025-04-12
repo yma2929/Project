@@ -116,7 +116,7 @@
             <h2>💌 We would like to hear more from you!</h2>
            
 
-           <form method="post" action="#" autocomplete="on">
+           <form method="post"  autocomplete="on" id="ratingForm" name="ratingForm" action="#">
             <h3> Rating Form 🌟</h3>
             <p>
                 <label>First Name:
@@ -130,12 +130,12 @@
             </p>
             <p>
                 <label>Email Address:
-                    <input type="email" name="email" size="35" id="emailAddress" pattern="[a-zA-Z0-9-_!]+@[a-zA-z]{2,8}\.[a-zA-Z]{2,6}" placeholder="e.g  jphnjames234@gmail.com" required>
+                    <input type="email" name="email" size="35" id="emailAddress" pattern="^[a-zA-Z0-9._%+]+@[a-zA-Z]+\.[a-zA-Z]{2,}$" placeholder="e.g  jphnjames234@gmail.com" required>
                 </label>
             </p>
             <p>
                 <label> Phone Number:
-                    <input type="tel" name="phoneNum" size="35" minlength="9" maxlength="9" pattern="[0-9]{9}" placeholder="e.g 055452349">
+                    <input type="tel" name="phoneNum" id="phoneNum" size="35" minlength="10" maxlength="10" pattern="[0-9]{10}" placeholder="e.g 055452349">
                 </label>
             </p>
             
@@ -235,7 +235,8 @@
             </p>
             <p>
     
-                <input type="reset" value="Reset" class="button">
+                
+                <input type="reset" value="Reset" class="button" id="resetButton">
                 <input type="submit" value="Submit" class="button">
             </p>
 
