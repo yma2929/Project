@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Recipes </title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content ="a website that shows several recipes from a varitey of cuisines">
+        <meta name="keywords" content="recipes, food, cooking, cuisine, meals">
+        <link rel="icon" type="image/png"  sizes = "32x32" href="./media/webLogo.png">
+
+        <link rel="stylesheet" type="text/css" href="./css/mainpage.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Dancing+Script:wght@400..700&family=Elsie+Swash+Caps:wght@400;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Vidaloka&display=swap" rel="stylesheet">
+
+    </head>
+<body>
+
+    <div class="container">
+        <header class="item header">
+            <a href="./index.html">
+                <img class="logo" src="./media/icon.jpeg" alt="logo pic" width="100" height="100">
+            </a>
+            
+            <nav id="navArea">
+                <ul class="navBar">
+                    
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li><a href="./contactUs.html">Contact Us</a></li>
+                    <li><a href="./mainpage.html">Recipes</a></li>
+                </ul>
+            </nav>
+            
+        
+        </header>
+
+       
+
+        <section class="cuisine-types item">
+            <h2>🎐 Cuisines </h2>
+            <p> Here is a list of the cuisines that we provide recipes for:</p>
+           
+            <div class="cardcontainer">
+
+                <div class="recipeCard">
+                    <div class="cardImage"> <img src="./media/foodPics/italian.jpg" alt="a picture that represents italian cuisine" > </div>
+                        <div class="cardBody">
+                            <div class="cardTitle">Italian</div>
+                            <p class="cardText">Known for its simplicity and fresh ingredients, Italian food features pasta, tomatoes, olive oil, cheese, and herbs. Classics like pizza, lasagna, and risotto bring comfort and bold flavors to the table.</p>
+                            <a href="./italianRecipes.html" target="_blank" class="cardButton">Click to view recipes</a>
+                        </div>
+                 </div>
+                 
+                 <div class="recipeCard">
+                    <div class="cardImage"> <img src="./media/foodPics/american.jpg" alt="a picture that represents american cuisine" > </div>
+                        <div class="cardBody">
+                            <div class="cardTitle">American</div>
+                            <p class="cardText">A melting pot of diverse flavors, American cuisine ranges from juicy burgers and BBQ to comfort foods like mac and cheese and hearty breakfasts. It blends global influences into unique, indulgent dishes.</p>
+                            <a href="./american.html" target="_blank" class="cardButton">Click to view recipes</a>
+                        </div>
+                 </div>
+
+                 <div class="recipeCard">
+                    <div class="cardImage"> <img src="./media/foodPics/middleeast.jpg" alt="a picture that represents middle eastern  cuisine"> </div>
+                        <div class="cardBody">
+                            <div class="cardTitle">Middle Eastern</div>
+                            <p class="cardText">A rich blend of flavors featuring aromatic spices, grilled meats, fresh herbs, and staple ingredients like olives, chickpeas, and tahini. Dishes like hummus, kebabs, and falafel are popular worldwide.</p>
+                            <a href="./middleeastRecipes.html" target="_blank" class="cardButton">Click to view recipes</a>
+                        </div>
+                 </div>
+                </div> 
+                
+    </section>
+
+    
+
+    <section class=" features"> 
+
+        <h2>💡Our Awesome features</h2>
+        
+        <div class="features-container">
+            <section class="features-item quality">
+            <img src="./media/sec/quality.jpg" alt="Picture denoting good quality food">
+            <h3> Quality Food 🍴 </h3>
+        </section>
+
+        <section class="features-item chef">
+                <img src="./media/sec/chef.jpg" alt="Picture of a chef">
+                <h3> Cook like a chef 🧑‍🍳</h3>
+        </section>
+
+        <section class="features-item ing">
+                <img src="./media/sec/ing.jpg" alt="Picture of ingredients">
+                <h3> Ingredients 📝</h3>
+        </section>
+
+        <section class="features-item easy">
+            <img src="./media/sec/easy.jpg" alt="Picture of a simple recipe">
+                <h3> Easy Recipes 🍳</h3>
+        </section>
+                
+        <section class="features-item hot">
+                <img src="./media/sec/hot.jpg" alt="Picture of a hot drink">
+                <h3> Serve Hot ☕</h3>
+        </section>
+
+        </div>
+
+    </section>
+
+
+        
+        <section class="userOpinion">
+            <h2>💌 We would like to hear more from you!</h2>
+           
+
+           <form method="POST"  autocomplete="on" id="ratingForm" name="ratingForm" action="http://localhost:4000/dataProcessing"  >
+            <h3> Rating Form 🌟</h3>
+            <p>
+                <label>First Name:
+                    <input type="text" size="35" name="fname" id="fName" placeholder="John" required pattern="[a-zA-Z]+" >
+                </label>
+            </p>
+            <p>
+                <label> Last Name:
+                    <input type="text" size="35" name="lname" id="lName" placeholder="James" pattern="[a-zA-Z]+" >
+                </label>
+            </p>
+            <p>
+                <label>Email Address:
+                    <input type="email" name="emailAddress" size="35" id="emailAddress" pattern="^[a-zA-Z0-9._%+]+@[a-zA-Z]+\.[a-zA-Z]{2,}$" placeholder="e.g  jphnjames234@gmail.com" required>
+                </label>
+            </p>
+            <p>
+                <label> Phone Number:
+                    <input type="tel" name="phoneNum" id="phoneNum" size="35" minlength="10" maxlength="10" pattern="[0-9]{10}" placeholder="e.g 055452349">
+                </label>
+            </p>
+            
+                <label>Which web page did you like best?</label>
+                <p>
+                    <label>
+                    <input type="checkbox" value="mainpage" id="index" name="websitePages">
+                    Main page </label>
+                    <label>
+                        <input type="checkbox" value="contact" id="contact" name="websitePages">
+                    Contact Us </label>
+                    <label>
+                        <input type="checkbox" value="about" id="about" name="websitePages">
+                    About Us  </label>
+                    <label>
+                        <input type="checkbox" value="recipe" id="recipe" name="websitePages">
+                    Recipes</label>
+                </p>
+           
+                <label> Which Recipe did you follow?</label>
+                <p>
+                    <label>
+                        <input type="checkbox" value="Kabsa" id="kabsa" name="recipeType">
+                        Kabsa </label>
+                        <label>
+                            <input type="checkbox" value="Shawarma" id="shawarma" name="recipeType">
+                        Shawarma </label>
+                        <label>
+                            <input type="checkbox" value="Fattoush" id="Fattoush" name="recipeType">
+                        Fattoush</label>
+                        <label>
+                            <input type="checkbox" value="Manakish" id="Manakish" name="recipeType">
+                            Manakish
+                        </label>
+                        <label>
+                            <input type="checkbox" value="Ma’amoul" id="Ma’amoul" name="recipeType">
+                            Ma’amoul</label>
+                            <label>
+                                <input type="checkbox" value="Pizza" id="pizza" name="recipeType">
+                                Pizza
+                            </label>
+                            <label>
+                                <input type="checkbox" value="Lasagna" id="Lasagna" name="recipeType">
+                                Lasagna 
+                            </label>
+                            <label>
+                                <input type="checkbox" value="steak" id="steak" name="recipeType">
+                                Steak
+                            </label>
+                            <label>
+                                <input type="checkbox" value="ceasersalad" id="ceasersalad" name="recipeType">
+                                Ceaser Salad
+                            </label>
+                            <label>
+                                <input type="checkbox" value="MacandCheese" id="macandcheese" name="recipeType">  
+                                Mac and Cheese
+                            </label>
+                            <label>
+                                <input type="checkbox" value="Brownies" id="Brownies" name="recipeType">
+                                Brownies
+                            </label>
+                </p>
+            
+            <label> Rate the recipe:</label>
+                <p>
+                    <label>
+                        <input type="radio" name="recipeRate" value="1"> ⭐
+                    </label>
+                    <label>
+                        <input type="radio" name="recipeRate" value="2"> ⭐⭐
+                    </label>
+                    <label>
+                        <input type="radio" name="recipeRate" value="3"> ⭐⭐⭐
+                    </label>
+                    <label>
+                        <input type="radio" name="recipeRate" value="4"> ⭐⭐⭐⭐
+                    </label>
+                    <label>
+                        <input type="radio" name="recipeRate" value="5"> ⭐⭐⭐⭐⭐
+                    </label>
+                    
+                    
+                    
+                </p>
+            
+            <p>
+                <label for="textarea">Please provide any comments:</label>
+            </p>
+            <p>
+                <textarea cols="30" rows="15" id="textarea" name="comments">📩Write here..</textarea>
+
+            </p>
+            <p>
+                <label> Kindly rate our service
+                <input type="range" id="rating" name="rate" min="0" max="5">
+            </label>
+            </p>
+            <p>
+    
+                
+                <input type="reset" value="Reset" class="button" id="resetButton">
+                <input type="submit" value="Submit" class="button">
+            </p>
+
+            </form>
+            <div id="confirmation-message"></div>
+        </section>
+
+           
+        
+
+       
+
+        <section class="quote item quote-container">
+            <h2> 🪄Facts </h2>
+                <blockquote >
+                    
+            
+                    <p id="random-facts"> 
+                        Honey never spoils! 🍯
+                        Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old—and still perfectly edible!</p>
+                </blockquote>
+                        
+            
+            </section>
+        
+
+
+        
+        
+            <footer class="item footer">
+                <p> &copy; 2025 The Recipes Hub</p>
+            <p>All rights reserved</p>
+            <p> Feel free to contact us at <em>therecipeshub@gmail.com</em> or call us at <strong>056-666-666</strong> </p>
+        
+            </footer>
+
+        </div>
+
+
+
+        <script src="./js/formValidation.js"></script>
+</body>
+</html>
