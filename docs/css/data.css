@@ -1,0 +1,226 @@
+#insertedData{
+    padding: 20px;
+    margin: 20px;
+    border-radius:15px;
+     font-family:"Playfair Display", serif;
+
+}
+p{
+    font-family: "Vidaloka", serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #504E76;
+}
+
+h2{
+    color:#364C84;
+    font-family:"Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+}
+body{
+    background-color:#fcfaf8 ;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: "header header header  header"
+                        "form form form form"
+                        "footer footer footer footer ";
+                        grid-template-columns: 1fr 1fr 1fr 1fr;
+                        grid-template-rows: .15fr  .55fr .15fr;
+                        grid-gap:10px;
+                        margin: 10px; 
+                        
+   
+}
+
+header{
+    grid-area: header; 
+    background-color: #edf1f6;
+    margin:20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    border-radius: 25px;
+
+}
+/* nav css starts here */
+#navArea li a{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    font-size: 16px;
+    color: #0f0f3d;
+    text-decoration: none;
+}
+
+.navBar{
+    list-style: none;
+    display:flex;
+    gap:10px;
+    padding: 0;
+}
+.navBar li{
+    display: inline;
+    padding: 0 20px;
+    color:#081f5c
+}
+.navBar li a{
+    transition: all 0.3s ease 0s;
+    white-space: nowrap;
+}
+.navBar li a:hover{
+    color: rgb(5, 19, 37) !important;
+    font-weight: 900;
+    font-size: 20px !important;
+}
+.menuIcon{
+    display: none;
+}
+#menu-Toggle{
+    display: none;
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+img.logo{
+    border-radius: 15px;
+}
+
+/* nav css ends here */
+.userOpinion{
+    
+    grid-area: form;
+
+}
+    /*footer css starts here */
+.footer{
+    grid-area: footer;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #edf1f6;
+    border-radius: 20px; 
+}
+.footer p{
+    font-size: 15px;
+}
+/*footer css ends here */
+@media screen and (max-width:992px){
+
+.container{
+    grid-template-areas: "header header header  "
+                        "form form form "
+                        "footer footer footer  ";
+                        gap:20px;
+        padding:30px;
+        margin: 5px;
+}
+    h1{
+        font-size:1.90rem;
+    }
+    h2{
+        font-size: 1.65rem;
+    }
+    h3{
+        font-size: 1.45rem;
+    }
+    li {
+        font-size: 1.25rem;
+    }
+    p{
+        font-size: 1.35rem;
+    }
+    }
+
+/*size 768px*/
+
+
+@media screen and (max-width:768px){
+
+.container{
+    display:grid;
+    grid-template-areas: "header header header   "
+                        "form  form form "
+                        "footer  footer footer   ";
+    gap:10px;
+    padding:10px;
+    margin: 10px;
+}
+footer .footer{
+    
+    padding-bottom: 1px;
+}
+header {
+    margin: 20px;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.navBar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.navBar li {
+    padding: 5px 0;
+}
+
+img.logo{
+    max-width: 96%;
+}
+h2{
+    font-size: 1.25rem;
+}
+p{
+    font-size: 1.25rem;
+}
+}
+/*size 576px*/
+
+
+@media screen and (max-width:576px) {
+    .container{
+        
+        grid-template-areas: "header "
+                        "form"
+                        "footer";
+        gap:30px;
+        padding:25px;
+        margin: 25px;
+    }
+    
+header {
+    margin: 15px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.navBar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.navBar li {
+    padding: 5px 0;
+}
+
+    h2{
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 1.15rem;
+    }
+    
+    
+}

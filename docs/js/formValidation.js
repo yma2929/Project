@@ -114,6 +114,8 @@ function validateform(firstName, lastName, email, phoneNumber, rating) {
 
 
 
+
+
 //random quotes starts here
 const quoteElement = document.getElementById("random-facts");
 function generateRandomQuote() {

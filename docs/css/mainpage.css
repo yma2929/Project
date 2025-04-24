@@ -1,9 +1,29 @@
+.button{
+    padding: 10px 30px;
+    margin: 10px auto;
+    border:none;
+    outline: none;
+    color:rgb(81, 81, 127);
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 45px;
+    background-color: #e9f3ff;
+    text-decoration: none;
+    font-family: "Elsie Swash Caps", cursive;
+    font-size: 15px;
+    font-weight: 200;
+    text-align:center;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.2) !important;
+
+    
+}
 #confirmation-message{
     padding: 20px;
     margin: 20px;
     border-radius:15px;
      font-family:"Playfair Display", serif;
-
 
 }
 p{
@@ -503,7 +523,7 @@ p{
 blockquote p{
     font-size: .95rem;
 }
-
+}
 /*size 576px*/
 
 
@@ -561,5 +581,4 @@ blockquote p{
     }
     
     
-}
 }

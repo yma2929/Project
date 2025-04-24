@@ -14,7 +14,7 @@ application.use(cors({
 }));
 
 //static routing
-application.use("/",express.static("./website"));
+application.use("/",express.static("./docs"));
 
 //declaring used file
 //html routing
@@ -67,6 +67,23 @@ if(!error.isEmpty()){
     }
 });
 
+application.get("/opinions", (request, response) => {
+    let db = mysql.createConnection({
+        host:"localhost",
+        user:"root",
+        password:"",
+        database:"the_recipes_hub",
+        port:3306
+    });
+    db.query("SELECT * FROM user_opinion", (error, result) => {
+        if (error) {
+            console.error("Error fetching data from database:", error);
+            response.status(500).json({ error: "Internal server error" });
+            return;
+        }
+        response.json(result);
+    });
+}); 
 
 function addUserOpinion(firstName,lastName,email,phoneNumber,pages,recipes,rating,comments,rateRange){
     let db = mysql.createConnection({
@@ -175,7 +192,14 @@ application.post("/contact", (request, response) => {
             status: true, 
             message: "Thank you! Your message has been received successfully and we will contact you soon."
         };
-    } else {
+        Adduser(firstName, lastName, email, mobile, gender, date, language, message, function(success) {
+            if (success) {
+                console.log("Contact saved to database.");
+            } else {
+                console.error("Failed to save contact.");
+            }
+        });
+        } else {
         responseMessage = {
             status: false,
             err: "Please make sure to enter valid data in all fields"
@@ -199,3 +223,38 @@ application.listen(port,() =>{
     console.log("server is running on port " + port);
 });
 
+
+
+
+
+function Adduser(firstName, lastName, email, mobile, gender, date, language, message, callback) {
+    let db = mysql.createConnection({
+        host:"localhost",
+        user:"root",
+        password:"",
+        database:"the_recipes_hub",
+        port:3306
+    });
+
+    db.connect(function (err) {
+        if (err) {
+            console.error("Database connection failed:", err);
+            callback(false);
+            return;
+        }
+
+        let sql = "INSERT INTO contactData (firstName, lastName, email, mobile, gender, date, language, message) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+        let values = [firstName, lastName, email, mobile, gender, date, language, message];
+
+        db.query(sql, values, function (err, result) {
+            if (err) {
+                console.error("Error inserting data:", err);
+                callback(false);
+            } else {
+                console.log("✅ 1 record has been added");
+                callback(true);
+            }
+            db.end();
+     });
+});
+}
